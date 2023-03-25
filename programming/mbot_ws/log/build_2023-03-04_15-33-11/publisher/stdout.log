@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/publisher/publisher.egg-info
+writing ../../build/publisher/publisher.egg-info/PKG-INFO
+writing dependency_links to ../../build/publisher/publisher.egg-info/dependency_links.txt
+writing entry points to ../../build/publisher/publisher.egg-info/entry_points.txt
+writing requirements to ../../build/publisher/publisher.egg-info/requires.txt
+writing top-level names to ../../build/publisher/publisher.egg-info/top_level.txt
+writing manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+reading manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+writing manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kurzmann/mbot_ws/build/publisher/build
+creating /home/kurzmann/mbot_ws/build/publisher/build/lib
+creating /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher
+copying publisher/__init__.py -> /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher
+copying publisher/rc_sensor_pub.py -> /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher
+copying publisher/openmv_cam_pub.py -> /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher
+running install
+running install_lib
+creating /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher
+copying /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher/__init__.py -> /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher
+copying /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher/rc_sensor_pub.py -> /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher
+copying /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher/openmv_cam_pub.py -> /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher
+byte-compiling /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher/rc_sensor_pub.py to rc_sensor_pub.cpython-310.pyc
+byte-compiling /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher/openmv_cam_pub.py to openmv_cam_pub.cpython-310.pyc
+running install_data
+creating /home/kurzmann/mbot_ws/install/publisher/share/ament_index
+creating /home/kurzmann/mbot_ws/install/publisher/share/ament_index/resource_index
+creating /home/kurzmann/mbot_ws/install/publisher/share/ament_index/resource_index/packages
+copying resource/publisher -> /home/kurzmann/mbot_ws/install/publisher/share/ament_index/resource_index/packages
+copying package.xml -> /home/kurzmann/mbot_ws/install/publisher/share/publisher
+running install_egg_info
+Copying ../../build/publisher/publisher.egg-info to /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/kurzmann/mbot_ws/build/publisher/install.log'

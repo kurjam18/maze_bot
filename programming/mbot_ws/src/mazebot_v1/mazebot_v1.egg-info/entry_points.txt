@@ -1,0 +1,4 @@
+[console_scripts]
+master = mazebot_v1.mazebot_master.py:main
+motor_controller = mazebot_v1.motor_controller.py:main
+

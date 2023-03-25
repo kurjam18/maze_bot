@@ -1,0 +1,22 @@
+[0.523s] Invoking command in '/home/kurzmann/mbot_ws/src/publisher': PYTHONPATH=/home/kurzmann/mbot_ws/build/publisher/prefix_override:/home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/publisher build --build-base /home/kurzmann/mbot_ws/build/publisher/build install --record /home/kurzmann/mbot_ws/build/publisher/install.log --single-version-externally-managed
+[0.662s] running egg_info
+[0.663s] writing ../../build/publisher/publisher.egg-info/PKG-INFO
+[0.663s] writing dependency_links to ../../build/publisher/publisher.egg-info/dependency_links.txt
+[0.663s] writing entry points to ../../build/publisher/publisher.egg-info/entry_points.txt
+[0.663s] writing requirements to ../../build/publisher/publisher.egg-info/requires.txt
+[0.663s] writing top-level names to ../../build/publisher/publisher.egg-info/top_level.txt
+[0.664s] reading manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+[0.664s] writing manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+[0.664s] running build
+[0.665s] running build_py
+[0.665s] running install
+[0.665s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.665s]   warnings.warn(
+[0.665s] running install_lib
+[0.666s] running install_data
+[0.666s] running install_egg_info
+[0.668s] removing '/home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[0.668s] Copying ../../build/publisher/publisher.egg-info to /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher-0.0.0-py3.10.egg-info
+[0.668s] running install_scripts
+[0.681s] writing list of installed files to '/home/kurzmann/mbot_ws/build/publisher/install.log'
+[0.696s] Invoked command in '/home/kurzmann/mbot_ws/src/publisher' returned '0': PYTHONPATH=/home/kurzmann/mbot_ws/build/publisher/prefix_override:/home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/publisher build --build-base /home/kurzmann/mbot_ws/build/publisher/build install --record /home/kurzmann/mbot_ws/build/publisher/install.log --single-version-externally-managed

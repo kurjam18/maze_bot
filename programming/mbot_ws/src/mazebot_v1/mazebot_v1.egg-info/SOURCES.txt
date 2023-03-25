@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+mazebot_v1/__init__.py
+mazebot_v1/mazebot_master.py
+mazebot_v1/motor_controller.py
+mazebot_v1.egg-info/PKG-INFO
+mazebot_v1.egg-info/SOURCES.txt
+mazebot_v1.egg-info/dependency_links.txt
+mazebot_v1.egg-info/entry_points.txt
+mazebot_v1.egg-info/requires.txt
+mazebot_v1.egg-info/top_level.txt
+mazebot_v1.egg-info/zip-safe
+resource/mazebot_v1
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

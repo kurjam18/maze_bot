@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing mazebot_v1.egg-info/PKG-INFO
+writing dependency_links to mazebot_v1.egg-info/dependency_links.txt
+writing entry points to mazebot_v1.egg-info/entry_points.txt
+writing requirements to mazebot_v1.egg-info/requires.txt
+writing top-level names to mazebot_v1.egg-info/top_level.txt
+reading manifest file 'mazebot_v1.egg-info/SOURCES.txt'
+writing manifest file 'mazebot_v1.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot-v1.egg-link (link to .)
+Installing master script to /home/kurzmann/mbot_ws/install/mazebot_v1/lib/mazebot_v1
+Installing motor_controller script to /home/kurzmann/mbot_ws/install/mazebot_v1/lib/mazebot_v1
+
+Installed /home/kurzmann/mbot_ws/build/mazebot_v1
+running install_data

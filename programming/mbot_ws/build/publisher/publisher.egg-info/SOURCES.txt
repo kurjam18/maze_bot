@@ -1,0 +1,22 @@
+package.xml
+setup.cfg
+setup.py
+../../build/publisher/publisher.egg-info/PKG-INFO
+../../build/publisher/publisher.egg-info/SOURCES.txt
+../../build/publisher/publisher.egg-info/dependency_links.txt
+../../build/publisher/publisher.egg-info/entry_points.txt
+../../build/publisher/publisher.egg-info/requires.txt
+../../build/publisher/publisher.egg-info/top_level.txt
+../../build/publisher/publisher.egg-info/zip-safe
+publisher/__init__.py
+publisher/openmv_cam_pub.py
+publisher/rc_sensor_pub copy.py
+publisher/rc_sensor_pub.py
+publisher.egg-info/PKG-INFO
+publisher.egg-info/SOURCES.txt
+publisher.egg-info/dependency_links.txt
+publisher.egg-info/entry_points.txt
+publisher.egg-info/requires.txt
+publisher.egg-info/top_level.txt
+publisher.egg-info/zip-safe
+resource/publisher

@@ -1,0 +1,41 @@
+[0.533s] Invoking command in '/home/kurzmann/mbot_ws/src/publisher': PYTHONPATH=/home/kurzmann/mbot_ws/build/publisher/prefix_override:/home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/publisher build --build-base /home/kurzmann/mbot_ws/build/publisher/build install --record /home/kurzmann/mbot_ws/build/publisher/install.log --single-version-externally-managed
+[0.666s] running egg_info
+[0.666s] creating ../../build/publisher/publisher.egg-info
+[0.666s] writing ../../build/publisher/publisher.egg-info/PKG-INFO
+[0.667s] writing dependency_links to ../../build/publisher/publisher.egg-info/dependency_links.txt
+[0.667s] writing entry points to ../../build/publisher/publisher.egg-info/entry_points.txt
+[0.667s] writing requirements to ../../build/publisher/publisher.egg-info/requires.txt
+[0.667s] writing top-level names to ../../build/publisher/publisher.egg-info/top_level.txt
+[0.667s] writing manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+[0.667s] reading manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+[0.668s] writing manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+[0.668s] running build
+[0.668s] running build_py
+[0.668s] creating /home/kurzmann/mbot_ws/build/publisher/build
+[0.668s] creating /home/kurzmann/mbot_ws/build/publisher/build/lib
+[0.668s] creating /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher
+[0.668s] copying publisher/__init__.py -> /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher
+[0.668s] copying publisher/rc_sensor_pub.py -> /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher
+[0.668s] copying publisher/openmv_cam_pub.py -> /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher
+[0.668s] running install
+[0.670s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.670s]   warnings.warn(
+[0.670s] running install_lib
+[0.671s] creating /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher
+[0.671s] copying /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher/__init__.py -> /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher
+[0.671s] copying /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher/rc_sensor_pub.py -> /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher
+[0.671s] copying /home/kurzmann/mbot_ws/build/publisher/build/lib/publisher/openmv_cam_pub.py -> /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher
+[0.672s] byte-compiling /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher/__init__.py to __init__.cpython-310.pyc
+[0.672s] byte-compiling /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher/rc_sensor_pub.py to rc_sensor_pub.cpython-310.pyc
+[0.672s] byte-compiling /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher/openmv_cam_pub.py to openmv_cam_pub.cpython-310.pyc
+[0.672s] running install_data
+[0.673s] creating /home/kurzmann/mbot_ws/install/publisher/share/ament_index
+[0.673s] creating /home/kurzmann/mbot_ws/install/publisher/share/ament_index/resource_index
+[0.673s] creating /home/kurzmann/mbot_ws/install/publisher/share/ament_index/resource_index/packages
+[0.673s] copying resource/publisher -> /home/kurzmann/mbot_ws/install/publisher/share/ament_index/resource_index/packages
+[0.673s] copying package.xml -> /home/kurzmann/mbot_ws/install/publisher/share/publisher
+[0.673s] running install_egg_info
+[0.674s] Copying ../../build/publisher/publisher.egg-info to /home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages/publisher-0.0.0-py3.10.egg-info
+[0.674s] running install_scripts
+[0.686s] writing list of installed files to '/home/kurzmann/mbot_ws/build/publisher/install.log'
+[0.702s] Invoked command in '/home/kurzmann/mbot_ws/src/publisher' returned '0': PYTHONPATH=/home/kurzmann/mbot_ws/build/publisher/prefix_override:/home/kurzmann/mbot_ws/install/publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/publisher build --build-base /home/kurzmann/mbot_ws/build/publisher/build install --record /home/kurzmann/mbot_ws/build/publisher/install.log --single-version-externally-managed

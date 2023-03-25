@@ -1,0 +1,35 @@
+[0.519s] Invoking command in '/home/kurzmann/mbot_ws/mazebot_v1': PYTHONPATH=/home/kurzmann/mbot_ws/build/mazebot_v1/prefix_override:/home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/mazebot_v1 build --build-base /home/kurzmann/mbot_ws/build/mazebot_v1/build install --record /home/kurzmann/mbot_ws/build/mazebot_v1/install.log --single-version-externally-managed
+[0.660s] running egg_info
+[0.661s] creating ../build/mazebot_v1/mazebot_v1.egg-info
+[0.661s] writing ../build/mazebot_v1/mazebot_v1.egg-info/PKG-INFO
+[0.661s] writing dependency_links to ../build/mazebot_v1/mazebot_v1.egg-info/dependency_links.txt
+[0.661s] writing entry points to ../build/mazebot_v1/mazebot_v1.egg-info/entry_points.txt
+[0.661s] writing requirements to ../build/mazebot_v1/mazebot_v1.egg-info/requires.txt
+[0.661s] writing top-level names to ../build/mazebot_v1/mazebot_v1.egg-info/top_level.txt
+[0.661s] writing manifest file '../build/mazebot_v1/mazebot_v1.egg-info/SOURCES.txt'
+[0.662s] reading manifest file '../build/mazebot_v1/mazebot_v1.egg-info/SOURCES.txt'
+[0.662s] writing manifest file '../build/mazebot_v1/mazebot_v1.egg-info/SOURCES.txt'
+[0.662s] running build
+[0.662s] running build_py
+[0.663s] creating /home/kurzmann/mbot_ws/build/mazebot_v1/build
+[0.663s] creating /home/kurzmann/mbot_ws/build/mazebot_v1/build/lib
+[0.663s] creating /home/kurzmann/mbot_ws/build/mazebot_v1/build/lib/mazebot_v1
+[0.663s] copying mazebot_v1/__init__.py -> /home/kurzmann/mbot_ws/build/mazebot_v1/build/lib/mazebot_v1
+[0.663s] running install
+[0.663s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.663s]   warnings.warn(
+[0.663s] running install_lib
+[0.663s] creating /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1
+[0.663s] copying /home/kurzmann/mbot_ws/build/mazebot_v1/build/lib/mazebot_v1/__init__.py -> /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1
+[0.664s] byte-compiling /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1/__init__.py to __init__.cpython-310.pyc
+[0.664s] running install_data
+[0.664s] creating /home/kurzmann/mbot_ws/install/mazebot_v1/share/ament_index
+[0.664s] creating /home/kurzmann/mbot_ws/install/mazebot_v1/share/ament_index/resource_index
+[0.664s] creating /home/kurzmann/mbot_ws/install/mazebot_v1/share/ament_index/resource_index/packages
+[0.664s] copying resource/mazebot_v1 -> /home/kurzmann/mbot_ws/install/mazebot_v1/share/ament_index/resource_index/packages
+[0.664s] copying package.xml -> /home/kurzmann/mbot_ws/install/mazebot_v1/share/mazebot_v1
+[0.664s] running install_egg_info
+[0.665s] Copying ../build/mazebot_v1/mazebot_v1.egg-info to /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1-0.0.0-py3.10.egg-info
+[0.666s] running install_scripts
+[0.678s] writing list of installed files to '/home/kurzmann/mbot_ws/build/mazebot_v1/install.log'
+[0.693s] Invoked command in '/home/kurzmann/mbot_ws/mazebot_v1' returned '0': PYTHONPATH=/home/kurzmann/mbot_ws/build/mazebot_v1/prefix_override:/home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/mazebot_v1 build --build-base /home/kurzmann/mbot_ws/build/mazebot_v1/build install --record /home/kurzmann/mbot_ws/build/mazebot_v1/install.log --single-version-externally-managed

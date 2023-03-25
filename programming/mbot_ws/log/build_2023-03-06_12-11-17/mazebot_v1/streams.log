@@ -1,0 +1,44 @@
+[0.551s] Invoking command in '/home/kurzmann/mbot_ws/build/mazebot_v1': PYTHONPATH=/home/kurzmann/mbot_ws/build/mazebot_v1/prefix_override:/home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/kurzmann/mbot_ws/build/mazebot_v1/build
+[0.707s] running develop
+[0.707s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.707s]   warnings.warn(
+[0.707s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.708s]   warnings.warn(
+[0.744s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[0.745s]   warnings.warn(
+[0.745s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[0.745s]   warnings.warn(
+[0.745s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[0.745s]   warnings.warn(
+[0.809s] Removing /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot-v1.egg-link (link to .)
+[0.826s] Invoked command in '/home/kurzmann/mbot_ws/build/mazebot_v1' returned '0': PYTHONPATH=/home/kurzmann/mbot_ws/build/mazebot_v1/prefix_override:/home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/kurzmann/mbot_ws/build/mazebot_v1/build
+[0.828s] Invoking command in '/home/kurzmann/mbot_ws/src/mazebot_v1': PYTHONPATH=/home/kurzmann/mbot_ws/build/mazebot_v1/prefix_override:/home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mazebot_v1 build --build-base /home/kurzmann/mbot_ws/build/mazebot_v1/build install --record /home/kurzmann/mbot_ws/build/mazebot_v1/install.log --single-version-externally-managed
+[0.974s] running egg_info
+[0.974s] writing ../../build/mazebot_v1/mazebot_v1.egg-info/PKG-INFO
+[0.975s] writing dependency_links to ../../build/mazebot_v1/mazebot_v1.egg-info/dependency_links.txt
+[0.975s] writing entry points to ../../build/mazebot_v1/mazebot_v1.egg-info/entry_points.txt
+[0.975s] writing requirements to ../../build/mazebot_v1/mazebot_v1.egg-info/requires.txt
+[0.975s] writing top-level names to ../../build/mazebot_v1/mazebot_v1.egg-info/top_level.txt
+[0.976s] reading manifest file '../../build/mazebot_v1/mazebot_v1.egg-info/SOURCES.txt'
+[0.976s] writing manifest file '../../build/mazebot_v1/mazebot_v1.egg-info/SOURCES.txt'
+[0.976s] running build
+[0.976s] running build_py
+[0.976s] running install
+[0.977s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.977s]   warnings.warn(
+[0.977s] running install_lib
+[0.977s] creating /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1
+[0.977s] copying /home/kurzmann/mbot_ws/build/mazebot_v1/build/lib/mazebot_v1/__init__.py -> /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1
+[0.977s] copying /home/kurzmann/mbot_ws/build/mazebot_v1/build/lib/mazebot_v1/mazebot_master.py -> /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1
+[0.977s] copying /home/kurzmann/mbot_ws/build/mazebot_v1/build/lib/mazebot_v1/motor_controller.py -> /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1
+[0.977s] byte-compiling /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1/__init__.py to __init__.cpython-310.pyc
+[0.978s] byte-compiling /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1/mazebot_master.py to mazebot_master.cpython-310.pyc
+[0.978s] byte-compiling /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1/motor_controller.py to motor_controller.cpython-310.pyc
+[0.978s] running install_data
+[0.978s] running install_egg_info
+[0.980s] Copying ../../build/mazebot_v1/mazebot_v1.egg-info to /home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages/mazebot_v1-0.0.0-py3.10.egg-info
+[0.981s] running install_scripts
+[0.994s] Installing master script to /home/kurzmann/mbot_ws/install/mazebot_v1/lib/mazebot_v1
+[0.994s] Installing motor_controller script to /home/kurzmann/mbot_ws/install/mazebot_v1/lib/mazebot_v1
+[0.995s] writing list of installed files to '/home/kurzmann/mbot_ws/build/mazebot_v1/install.log'
+[1.010s] Invoked command in '/home/kurzmann/mbot_ws/src/mazebot_v1' returned '0': PYTHONPATH=/home/kurzmann/mbot_ws/build/mazebot_v1/prefix_override:/home/kurzmann/mbot_ws/install/mazebot_v1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mazebot_v1 build --build-base /home/kurzmann/mbot_ws/build/mazebot_v1/build install --record /home/kurzmann/mbot_ws/build/mazebot_v1/install.log --single-version-externally-managed
