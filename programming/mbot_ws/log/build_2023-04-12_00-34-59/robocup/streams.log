@@ -1,0 +1,46 @@
+[3.540s] Invoking command in '/home/pi/work/maze_bot/programming/mbot_ws/src/robocup': AMENT_PREFIX_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs:/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs:/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver LD_LIBRARY_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib PYTHONPATH=/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/prefix_override:/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages:/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robocup build --build-base /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build install --record /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/install.log --single-version-externally-managed
+[4.744s] running egg_info
+[4.746s] creating ../../build/robocup/robocup.egg-info
+[4.752s] writing ../../build/robocup/robocup.egg-info/PKG-INFO
+[4.753s] writing dependency_links to ../../build/robocup/robocup.egg-info/dependency_links.txt
+[4.754s] writing entry points to ../../build/robocup/robocup.egg-info/entry_points.txt
+[4.754s] writing requirements to ../../build/robocup/robocup.egg-info/requires.txt
+[4.755s] writing top-level names to ../../build/robocup/robocup.egg-info/top_level.txt
+[4.756s] writing manifest file '../../build/robocup/robocup.egg-info/SOURCES.txt'
+[4.765s] reading manifest file '../../build/robocup/robocup.egg-info/SOURCES.txt'
+[4.769s] writing manifest file '../../build/robocup/robocup.egg-info/SOURCES.txt'
+[4.770s] running build
+[4.770s] running build_py
+[4.771s] creating /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build
+[4.771s] creating /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib
+[4.772s] creating /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup
+[4.772s] copying robocup/ros2_serial_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup
+[4.772s] copying robocup/remotecontroll_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup
+[4.773s] copying robocup/__init__.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup
+[4.774s] copying robocup/mazebot_wall_detection.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup
+[4.775s] running install
+[4.776s] running install_lib
+[4.779s] creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup
+[4.780s] copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/ros2_serial_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup
+[4.781s] copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/remotecontroll_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup
+[4.782s] copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/__init__.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup
+[4.783s] copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/mazebot_wall_detection.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup
+[4.785s] byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/ros2_serial_mazebot.py to ros2_serial_mazebot.cpython-310.pyc
+[4.789s] byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/remotecontroll_mazebot.py to remotecontroll_mazebot.cpython-310.pyc
+[4.792s] byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/__init__.py to __init__.cpython-310.pyc
+[4.793s] byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/mazebot_wall_detection.py to mazebot_wall_detection.cpython-310.pyc
+[4.802s] running install_data
+[4.804s] creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index
+[4.805s] creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index/resource_index
+[4.805s] creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index/resource_index/packages
+[4.806s] copying resource/robocup -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index/resource_index/packages
+[4.806s] copying package.xml -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup
+[4.806s] copying launch/robocup.launch.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup
+[4.807s] running install_egg_info
+[4.813s] Copying ../../build/robocup/robocup.egg-info to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup-0.0.0-py3.10.egg-info
+[4.818s] running install_scripts
+[4.895s] Installing remote script to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/robocup
+[4.895s] Installing serial script to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/robocup
+[4.896s] Installing wall_det script to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/robocup
+[4.898s] writing list of installed files to '/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/install.log'
+[5.034s] Invoked command in '/home/pi/work/maze_bot/programming/mbot_ws/src/robocup' returned '0': AMENT_PREFIX_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs:/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs:/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver LD_LIBRARY_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/local/lib PYTHONPATH=/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/prefix_override:/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages:/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robocup build --build-base /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build install --record /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/install.log --single-version-externally-managed
