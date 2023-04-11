@@ -1,0 +1,180 @@
+[0.125s] Invoking command in '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs -- -j4 -l4
+[0.699s] [  2%] Built target mazebot_msgs__cpp
+[0.781s] [ 12%] Built target mazebot_msgs__rosidl_generator_c
+[0.799s] [ 12%] Built target ament_cmake_python_copy_mazebot_msgs
+[0.909s] [ 23%] Built target mazebot_msgs__rosidl_typesupport_cpp
+[0.932s] [ 34%] Built target mazebot_msgs__rosidl_typesupport_fastrtps_cpp
+[0.984s] [ 44%] Built target mazebot_msgs__rosidl_typesupport_introspection_cpp
+[1.028s] [ 55%] Built target mazebot_msgs__rosidl_typesupport_fastrtps_c
+[1.105s] [ 65%] Built target mazebot_msgs__rosidl_typesupport_c
+[1.128s] [ 76%] Built target mazebot_msgs__rosidl_typesupport_introspection_c
+[1.250s] [ 76%] Built target mazebot_msgs
+[1.375s] [ 78%] Built target mazebot_msgs__py
+[1.552s] [ 87%] Built target mazebot_msgs__rosidl_generator_py
+[1.714s] [ 91%] Built target mazebot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.741s] [ 95%] Built target mazebot_msgs__rosidl_typesupport_c__pyext
+[1.775s] [100%] Built target mazebot_msgs__rosidl_typesupport_introspection_c__pyext
+[2.793s] running egg_info
+[2.795s] writing mazebot_msgs.egg-info/PKG-INFO
+[2.799s] writing dependency_links to mazebot_msgs.egg-info/dependency_links.txt
+[2.800s] writing top-level names to mazebot_msgs.egg-info/top_level.txt
+[2.812s] reading manifest file 'mazebot_msgs.egg-info/SOURCES.txt'
+[2.815s] writing manifest file 'mazebot_msgs.egg-info/SOURCES.txt'
+[2.959s] [100%] Built target ament_cmake_python_build_mazebot_msgs_egg
+[3.011s] Invoked command in '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs -- -j4 -l4
+[3.647s] Invoking command in '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs
+[3.685s] -- Install configuration: ""
+[3.696s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/ament_index/resource_index/rosidl_interfaces/mazebot_msgs
+[3.697s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs
+[3.697s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg
+[3.698s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/mazebot_field_orientation.h
+[3.699s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.699s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/mazebot_neighboring_fields_wall_detection.h
+[3.699s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/lidar_scan_processed.h
+[3.700s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail
+[3.701s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__struct.h
+[3.701s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__functions.c
+[3.702s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support.h
+[3.703s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__functions.c
+[3.703s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__functions.c
+[3.704s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__functions.h
+[3.704s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__functions.h
+[3.705s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__functions.h
+[3.705s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__struct.h
+[3.706s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support.h
+[3.706s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__type_support.h
+[3.707s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__struct.h
+[3.707s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/library_path.sh
+[3.708s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/library_path.dsv
+[3.708s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_generator_c.so
+[3.708s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs
+[3.709s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg
+[3.709s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.710s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail
+[3.710s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__rosidl_typesupport_fastrtps_c.h
+[3.710s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__rosidl_typesupport_fastrtps_c.h
+[3.711s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__rosidl_typesupport_fastrtps_c.h
+[3.712s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_fastrtps_c.so
+[3.713s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs
+[3.714s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg
+[3.715s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/mazebot_field_orientation.hpp
+[3.716s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail
+[3.716s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__builder.hpp
+[3.717s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__traits.hpp
+[3.718s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__builder.hpp
+[3.718s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__builder.hpp
+[3.719s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__struct.hpp
+[3.720s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__traits.hpp
+[3.720s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__traits.hpp
+[3.721s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__struct.hpp
+[3.722s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__struct.hpp
+[3.722s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/lidar_scan_processed.hpp
+[3.723s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/mazebot_neighboring_fields_wall_detection.hpp
+[3.723s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs
+[3.724s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg
+[3.724s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.725s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail
+[3.725s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[3.726s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__rosidl_typesupport_fastrtps_cpp.hpp
+[3.726s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__rosidl_typesupport_fastrtps_cpp.hpp
+[3.727s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/dds_fastrtps
+[3.727s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.728s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs
+[3.729s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg
+[3.729s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.730s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail
+[3.731s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__rosidl_typesupport_introspection_c.h
+[3.732s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support.c
+[3.732s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__rosidl_typesupport_introspection_c.h
+[3.732s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__rosidl_typesupport_introspection_c.h
+[3.733s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__type_support.c
+[3.733s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support.c
+[3.736s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_introspection_c.so
+[3.740s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_c.so
+[3.742s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs
+[3.742s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg
+[3.743s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail
+[3.744s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__rosidl_typesupport_introspection_cpp.hpp
+[3.744s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support.cpp
+[3.745s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support.cpp
+[3.746s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__type_support.cpp
+[3.746s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__rosidl_typesupport_introspection_cpp.hpp
+[3.747s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__rosidl_typesupport_introspection_cpp.hpp
+[3.751s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_introspection_cpp.so
+[3.755s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_cpp.so
+[3.757s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/pythonpath.sh
+[3.758s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/pythonpath.dsv
+[3.758s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs-1.0.0-py3.10.egg-info
+[3.759s] -- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs-1.0.0-py3.10.egg-info/PKG-INFO
+[3.761s] -- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs-1.0.0-py3.10.egg-info/top_level.txt
+[3.763s] -- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs-1.0.0-py3.10.egg-info/SOURCES.txt
+[3.765s] -- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs-1.0.0-py3.10.egg-info/dependency_links.txt
+[3.767s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs
+[3.767s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/_mazebot_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.768s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[3.769s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg
+[3.769s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_mazebot_neighboring_fields_wall_detection.py
+[3.770s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_mazebot_field_orientation_s.c
+[3.771s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/__init__.py
+[3.772s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_lidar_scan_processed_s.c
+[3.772s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_mazebot_neighboring_fields_wall_detection_s.c
+[3.773s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_mazebot_field_orientation.py
+[3.773s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_lidar_scan_processed.py
+[3.774s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/_mazebot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.774s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/__init__.py
+[3.775s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[3.775s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/libmazebot_msgs__rosidl_generator_py.so
+[3.776s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/_mazebot_msgs_s.ep.rosidl_typesupport_c.c
+[3.777s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[3.971s] Listing '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs'...
+[3.974s] Listing '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg'...
+[4.018s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[4.025s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[4.035s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[4.048s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_generator_py.so
+[4.051s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/LidarScanProcessed.idl
+[4.053s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/MazebotFieldOrientation.idl
+[4.057s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/MazebotNeighboringFieldsWallDetection.idl
+[4.059s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/LidarScanProcessed.msg
+[4.060s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/MazebotFieldOrientation.msg
+[4.062s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/MazebotNeighboringFieldsWallDetection.msg
+[4.063s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/ament_index/resource_index/package_run_dependencies/mazebot_msgs
+[4.065s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/ament_index/resource_index/parent_prefix_path/mazebot_msgs
+[4.066s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/ament_prefix_path.sh
+[4.069s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/ament_prefix_path.dsv
+[4.070s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/path.sh
+[4.071s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/path.dsv
+[4.072s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/local_setup.bash
+[4.074s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/local_setup.sh
+[4.075s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/local_setup.zsh
+[4.077s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/local_setup.dsv
+[4.079s] -- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.dsv
+[4.080s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/ament_index/resource_index/packages/mazebot_msgs
+[4.081s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_generator_cExport.cmake
+[4.082s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_generator_cExport-noconfig.cmake
+[4.083s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[4.085s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.089s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_generator_cppExport.cmake
+[4.096s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.097s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.103s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[4.104s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.108s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_cExport.cmake
+[4.110s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[4.114s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[4.116s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.120s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_cppExport.cmake
+[4.122s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[4.125s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_generator_pyExport.cmake
+[4.129s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_generator_pyExport-noconfig.cmake
+[4.136s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/rosidl_cmake-extras.cmake
+[4.138s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.139s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.142s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.143s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[4.144s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.148s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.149s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgsConfig.cmake
+[4.150s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgsConfig-version.cmake
+[4.151s] -- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.xml
+[4.169s] Invoked command in '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs

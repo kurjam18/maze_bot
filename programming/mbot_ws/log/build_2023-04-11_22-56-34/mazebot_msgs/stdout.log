@@ -1,0 +1,4 @@
+[  0%] Built target mazebot_msgs__cpp
+[  2%] Built target mazebot_msgs__rosidl_generator_c
+[ 12%] Built target mazebot_msgs__rosidl_typesupport_cpp
+[ 23%] Built target mazebot_msgs__rosidl_typesupport_fastrtps_cpp

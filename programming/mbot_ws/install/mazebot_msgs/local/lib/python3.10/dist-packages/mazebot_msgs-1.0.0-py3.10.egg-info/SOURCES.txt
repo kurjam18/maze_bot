@@ -1,0 +1,10 @@
+setup.py
+mazebot_msgs/__init__.py
+mazebot_msgs.egg-info/PKG-INFO
+mazebot_msgs.egg-info/SOURCES.txt
+mazebot_msgs.egg-info/dependency_links.txt
+mazebot_msgs.egg-info/top_level.txt
+mazebot_msgs/msg/__init__.py
+mazebot_msgs/msg/_lidar_scan_processed.py
+mazebot_msgs/msg/_mazebot_field_orientation.py
+mazebot_msgs/msg/_mazebot_neighboring_fields_wall_detection.py

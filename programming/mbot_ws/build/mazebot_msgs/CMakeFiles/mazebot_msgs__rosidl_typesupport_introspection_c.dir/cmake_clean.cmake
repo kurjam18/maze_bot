@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/lidar_scan_processed__type_support.c.o"
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/lidar_scan_processed__type_support.c.o.d"
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support.c.o"
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support.c.o.d"
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support.c.o"
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support.c.o.d"
+  "libmazebot_msgs__rosidl_typesupport_introspection_c.pdb"
+  "libmazebot_msgs__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/lidar_scan_processed__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/lidar_scan_processed__type_support.c"
+  "rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/mazebot_field_orientation__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support.c"
+  "rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

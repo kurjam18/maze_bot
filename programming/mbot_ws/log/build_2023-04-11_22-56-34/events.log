@@ -1,0 +1,73 @@
+[0.000000] (-) TimerEvent: {}
+[0.000599] (hls_lfcd_lds_driver) JobQueued: {'identifier': 'hls_lfcd_lds_driver', 'dependencies': OrderedDict()}
+[0.000715] (mazebot_msgs) JobQueued: {'identifier': 'mazebot_msgs', 'dependencies': OrderedDict()}
+[0.001755] (robocup) JobQueued: {'identifier': 'robocup', 'dependencies': OrderedDict([('hls_lfcd_lds_driver', '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver'), ('mazebot_msgs', '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs')])}
+[0.002571] (hls_lfcd_lds_driver) JobStarted: {'identifier': 'hls_lfcd_lds_driver'}
+[0.069463] (mazebot_msgs) JobStarted: {'identifier': 'mazebot_msgs'}
+[0.098988] (-) TimerEvent: {}
+[0.108991] (hls_lfcd_lds_driver) JobProgress: {'identifier': 'hls_lfcd_lds_driver', 'progress': 'cmake'}
+[0.113714] (hls_lfcd_lds_driver) JobProgress: {'identifier': 'hls_lfcd_lds_driver', 'progress': 'build'}
+[0.116997] (hls_lfcd_lds_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver', '--', '-j4', '-l4'], 'cwd': '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib::/usr/local/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/sh'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.131604] (mazebot_msgs) JobProgress: {'identifier': 'mazebot_msgs', 'progress': 'cmake'}
+[0.144364] (mazebot_msgs) JobProgress: {'identifier': 'mazebot_msgs', 'progress': 'build'}
+[0.146238] (mazebot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs', '--', '-j4', '-l4'], 'cwd': '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib::/usr/local/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/sh'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.199219] (-) TimerEvent: {}
+[0.299659] (-) TimerEvent: {}
+[0.400153] (-) TimerEvent: {}
+[0.500563] (-) TimerEvent: {}
+[0.601039] (-) TimerEvent: {}
+[0.701535] (-) TimerEvent: {}
+[0.801211] (mazebot_msgs) StdoutLine: {'line': b'[  0%] Built target mazebot_msgs__cpp\n'}
+[0.802480] (-) TimerEvent: {}
+[0.802657] (mazebot_msgs) StderrLine: {'line': b'Error copying directory from "/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs/rosidl_generator_py/mazebot_msgs" to "/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs/ament_cmake_python/mazebot_msgs/mazebot_msgs".\n'}
+[0.804420] (mazebot_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ament_cmake_python_copy_mazebot_msgs.dir/build.make:70: CMakeFiles/ament_cmake_python_copy_mazebot_msgs] Error 1\n'}
+[0.808653] (mazebot_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_copy_mazebot_msgs.dir/all] Error 2\n'}
+[0.809262] (mazebot_msgs) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[0.902731] (-) TimerEvent: {}
+[0.947661] (mazebot_msgs) StdoutLine: {'line': b'[  2%] Built target mazebot_msgs__rosidl_generator_c\n'}
+[1.008016] (-) TimerEvent: {}
+[1.024504] (mazebot_msgs) StdoutLine: {'line': b'[ 12%] Built target mazebot_msgs__rosidl_typesupport_cpp\n'}
+[1.041038] (mazebot_msgs) StdoutLine: {'line': b'[ 23%] Built target mazebot_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.046891] (mazebot_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.060344] (mazebot_msgs) CommandEnded: {'returncode': 2}
+[1.111951] (-) TimerEvent: {}
+[1.212411] (-) TimerEvent: {}
+[1.313047] (-) TimerEvent: {}
+[1.348061] (hls_lfcd_lds_driver) StdoutLine: {'line': b'[100%] Built target hlds_laser_publisher\n'}
+[1.403451] (hls_lfcd_lds_driver) CommandEnded: {'returncode': 0}
+[1.413208] (-) TimerEvent: {}
+[1.513613] (-) TimerEvent: {}
+[1.597708] (hls_lfcd_lds_driver) JobProgress: {'identifier': 'hls_lfcd_lds_driver', 'progress': 'install'}
+[1.616070] (-) TimerEvent: {}
+[1.655198] (hls_lfcd_lds_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver'], 'cwd': '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib::/usr/local/lib'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/sh'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.694358] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.698913] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/launch\n'}
+[1.702255] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/launch/view_hlds_laser.launch.py\n'}
+[1.704112] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/launch/hlds_laser.launch.py\n'}
+[1.705681] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/rviz\n'}
+[1.710090] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/rviz/hlds_laser.rviz\n'}
+[1.716249] (-) TimerEvent: {}
+[1.724495] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/lib/hls_lfcd_lds_driver/hlds_laser_publisher\n'}
+[1.730252] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/ament_index/resource_index/package_run_dependencies/hls_lfcd_lds_driver\n'}
+[1.733527] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/ament_index/resource_index/parent_prefix_path/hls_lfcd_lds_driver\n'}
+[1.736720] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/environment/ament_prefix_path.sh\n'}
+[1.737882] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/environment/ament_prefix_path.dsv\n'}
+[1.738446] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/environment/path.sh\n'}
+[1.739735] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/environment/path.dsv\n'}
+[1.740388] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/local_setup.bash\n'}
+[1.740875] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/local_setup.sh\n'}
+[1.741923] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/local_setup.zsh\n'}
+[1.742548] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/local_setup.dsv\n'}
+[1.742973] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.dsv\n'}
+[1.816455] (-) TimerEvent: {}
+[1.917019] (-) TimerEvent: {}
+[1.942476] (mazebot_msgs) JobEnded: {'identifier': 'mazebot_msgs', 'rc': 2}
+[1.946889] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/ament_index/resource_index/packages/hls_lfcd_lds_driver\n'}
+[1.947406] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.948028] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.948573] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/cmake/hls_lfcd_lds_driverConfig.cmake\n'}
+[1.948980] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/cmake/hls_lfcd_lds_driverConfig-version.cmake\n'}
+[1.949319] (hls_lfcd_lds_driver) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.xml\n'}
+[1.949695] (hls_lfcd_lds_driver) JobEnded: {'identifier': 'hls_lfcd_lds_driver', 'rc': 'SIGINT'}
+[1.957342] (robocup) JobSkipped: {'identifier': 'robocup'}
+[1.957600] (-) EventReactorShutdown: {}

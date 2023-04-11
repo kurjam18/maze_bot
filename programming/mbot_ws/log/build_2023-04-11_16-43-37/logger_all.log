@@ -1,0 +1,277 @@
+[4.067s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[4.067s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff98b4e7d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff988f3880>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff988f3880>>)
+[4.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.304s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/work/maze_bot/programming/mbot_ws'
+[4.305s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.306s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.307s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.392s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.393s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.394s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.394s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.394s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.395s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.395s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.395s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.397s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.397s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.397s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.398s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.398s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.398s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.398s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.399s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.399s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.399s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.399s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.399s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.399s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.400s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.400s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.400s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.400s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.403s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ignore', 'ignore_ament_install']
+[4.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore'
+[4.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore_ament_install'
+[4.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_pkg']
+[4.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_pkg'
+[4.404s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_meta']
+[4.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_meta'
+[4.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ros']
+[4.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ros'
+[4.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['cmake', 'python']
+[4.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'cmake'
+[4.405s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'python'
+[4.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['python_setup_py']
+[4.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'python_setup_py'
+[4.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/hls_lfcd_lds_driver) by extensions ['ignore', 'ignore_ament_install']
+[4.407s] Level 1:colcon.colcon_core.package_identification:_identify(src/hls_lfcd_lds_driver) by extension 'ignore'
+[4.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/hls_lfcd_lds_driver) by extension 'ignore_ament_install'
+[4.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/hls_lfcd_lds_driver) by extensions ['colcon_pkg']
+[4.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/hls_lfcd_lds_driver) by extension 'colcon_pkg'
+[4.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/hls_lfcd_lds_driver) by extensions ['colcon_meta']
+[4.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/hls_lfcd_lds_driver) by extension 'colcon_meta'
+[4.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/hls_lfcd_lds_driver) by extensions ['ros']
+[4.409s] Level 1:colcon.colcon_core.package_identification:_identify(src/hls_lfcd_lds_driver) by extension 'ros'
+[4.423s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hls_lfcd_lds_driver' with type 'ros.ament_cmake' and name 'hls_lfcd_lds_driver'
+[4.425s] Level 1:colcon.colcon_core.package_identification:_identify(src/mazebot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[4.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/mazebot_msgs) by extension 'ignore'
+[4.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/mazebot_msgs) by extension 'ignore_ament_install'
+[4.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/mazebot_msgs) by extensions ['colcon_pkg']
+[4.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/mazebot_msgs) by extension 'colcon_pkg'
+[4.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/mazebot_msgs) by extensions ['colcon_meta']
+[4.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/mazebot_msgs) by extension 'colcon_meta'
+[4.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/mazebot_msgs) by extensions ['ros']
+[4.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/mazebot_msgs) by extension 'ros'
+[4.431s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mazebot_msgs' with type 'ros.ament_cmake' and name 'mazebot_msgs'
+[4.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup) by extensions ['ignore', 'ignore_ament_install']
+[4.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup) by extension 'ignore'
+[4.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup) by extension 'ignore_ament_install'
+[4.433s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup) by extensions ['colcon_pkg']
+[4.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup) by extension 'colcon_pkg'
+[4.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup) by extensions ['colcon_meta']
+[4.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup) by extension 'colcon_meta'
+[4.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup) by extensions ['ros']
+[4.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup) by extension 'ros'
+[4.439s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robocup' with type 'ros.ament_python' and name 'robocup'
+[4.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.440s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.440s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.608s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.608s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.637s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 308 installed packages in /opt/ros/humble
+[4.644s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[4.926s] Level 5:colcon.colcon_core.verb:set package 'hls_lfcd_lds_driver' build argument 'cmake_args' from command line to 'None'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'hls_lfcd_lds_driver' build argument 'cmake_target' from command line to 'None'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'hls_lfcd_lds_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'hls_lfcd_lds_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'hls_lfcd_lds_driver' build argument 'cmake_clean_first' from command line to 'False'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'hls_lfcd_lds_driver' build argument 'cmake_force_configure' from command line to 'False'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'hls_lfcd_lds_driver' build argument 'ament_cmake_args' from command line to 'None'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'hls_lfcd_lds_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[4.927s] Level 5:colcon.colcon_core.verb:set package 'hls_lfcd_lds_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.927s] DEBUG:colcon.colcon_core.verb:Building package 'hls_lfcd_lds_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver', 'merge_install': False, 'path': '/home/pi/work/maze_bot/programming/mbot_ws/src/hls_lfcd_lds_driver', 'symlink_install': False, 'test_result_base': None}
+[4.931s] Level 5:colcon.colcon_core.verb:set package 'mazebot_msgs' build argument 'cmake_args' from command line to 'None'
+[4.932s] Level 5:colcon.colcon_core.verb:set package 'mazebot_msgs' build argument 'cmake_target' from command line to 'None'
+[4.932s] Level 5:colcon.colcon_core.verb:set package 'mazebot_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.932s] Level 5:colcon.colcon_core.verb:set package 'mazebot_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[4.932s] Level 5:colcon.colcon_core.verb:set package 'mazebot_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[4.932s] Level 5:colcon.colcon_core.verb:set package 'mazebot_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[4.932s] Level 5:colcon.colcon_core.verb:set package 'mazebot_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[4.932s] Level 5:colcon.colcon_core.verb:set package 'mazebot_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[4.932s] Level 5:colcon.colcon_core.verb:set package 'mazebot_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.932s] DEBUG:colcon.colcon_core.verb:Building package 'mazebot_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs', 'merge_install': False, 'path': '/home/pi/work/maze_bot/programming/mbot_ws/src/mazebot_msgs', 'symlink_install': False, 'test_result_base': None}
+[4.936s] Level 5:colcon.colcon_core.verb:set package 'robocup' build argument 'cmake_args' from command line to 'None'
+[4.937s] Level 5:colcon.colcon_core.verb:set package 'robocup' build argument 'cmake_target' from command line to 'None'
+[4.937s] Level 5:colcon.colcon_core.verb:set package 'robocup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.937s] Level 5:colcon.colcon_core.verb:set package 'robocup' build argument 'cmake_clean_cache' from command line to 'False'
+[4.937s] Level 5:colcon.colcon_core.verb:set package 'robocup' build argument 'cmake_clean_first' from command line to 'False'
+[4.937s] Level 5:colcon.colcon_core.verb:set package 'robocup' build argument 'cmake_force_configure' from command line to 'False'
+[4.937s] Level 5:colcon.colcon_core.verb:set package 'robocup' build argument 'ament_cmake_args' from command line to 'None'
+[4.937s] Level 5:colcon.colcon_core.verb:set package 'robocup' build argument 'catkin_cmake_args' from command line to 'None'
+[4.937s] Level 5:colcon.colcon_core.verb:set package 'robocup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.938s] DEBUG:colcon.colcon_core.verb:Building package 'robocup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/work/maze_bot/programming/mbot_ws/build/robocup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup', 'merge_install': False, 'path': '/home/pi/work/maze_bot/programming/mbot_ws/src/robocup', 'symlink_install': False, 'test_result_base': None}
+[4.940s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.952s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.953s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pi/work/maze_bot/programming/mbot_ws/src/hls_lfcd_lds_driver' with build type 'ament_cmake'
+[4.954s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pi/work/maze_bot/programming/mbot_ws/src/hls_lfcd_lds_driver'
+[4.990s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.991s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.991s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.017s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pi/work/maze_bot/programming/mbot_ws/src/mazebot_msgs' with build type 'ament_cmake'
+[5.018s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pi/work/maze_bot/programming/mbot_ws/src/mazebot_msgs'
+[5.027s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.027s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver -- -j4 -l4
+[5.105s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs -- -j4 -l4
+[6.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver -- -j4 -l4
+[6.326s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver
+[6.428s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hls_lfcd_lds_driver)
+[6.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver
+[6.487s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver' for CMake module files
+[6.493s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver' for CMake config files
+[6.499s] Level 1:colcon.colcon_core.shell:create_environment_hook('hls_lfcd_lds_driver', 'cmake_prefix_path')
+[6.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/hook/cmake_prefix_path.ps1'
+[6.512s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/hook/cmake_prefix_path.dsv'
+[6.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/hook/cmake_prefix_path.sh'
+[6.520s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/lib'
+[6.522s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/bin'
+[6.522s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/lib/pkgconfig/hls_lfcd_lds_driver.pc'
+[6.523s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/lib/python3.10/site-packages'
+[6.525s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/bin'
+[6.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.ps1'
+[6.540s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.dsv'
+[6.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.sh'
+[6.564s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.bash'
+[6.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.zsh'
+[6.579s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/colcon-core/packages/hls_lfcd_lds_driver)
+[6.681s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hls_lfcd_lds_driver)
+[6.689s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver' for CMake module files
+[6.692s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver' for CMake config files
+[6.694s] Level 1:colcon.colcon_core.shell:create_environment_hook('hls_lfcd_lds_driver', 'cmake_prefix_path')
+[6.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/hook/cmake_prefix_path.ps1'
+[6.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/hook/cmake_prefix_path.dsv'
+[6.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/hook/cmake_prefix_path.sh'
+[6.707s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/lib'
+[6.707s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/bin'
+[6.708s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/lib/pkgconfig/hls_lfcd_lds_driver.pc'
+[6.709s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/lib/python3.10/site-packages'
+[6.710s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/bin'
+[6.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.ps1'
+[6.718s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.dsv'
+[6.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.sh'
+[6.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.bash'
+[6.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/hls_lfcd_lds_driver/package.zsh'
+[6.728s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver/share/colcon-core/packages/hls_lfcd_lds_driver)
+[7.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs -- -j4 -l4
+[7.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs
+[8.237s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mazebot_msgs)
+[8.246s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs' for CMake module files
+[8.248s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs
+[8.252s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs' for CMake config files
+[8.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('mazebot_msgs', 'cmake_prefix_path')
+[8.283s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/cmake_prefix_path.ps1'
+[8.290s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/cmake_prefix_path.dsv'
+[8.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/cmake_prefix_path.sh'
+[8.295s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib'
+[8.296s] Level 1:colcon.colcon_core.shell:create_environment_hook('mazebot_msgs', 'ld_library_path_lib')
+[8.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/ld_library_path_lib.ps1'
+[8.305s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/ld_library_path_lib.dsv'
+[8.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/ld_library_path_lib.sh'
+[8.308s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/bin'
+[8.309s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/pkgconfig/mazebot_msgs.pc'
+[8.310s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/python3.10/site-packages'
+[8.310s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/bin'
+[8.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.ps1'
+[8.318s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.dsv'
+[8.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.sh'
+[8.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.bash'
+[8.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.zsh'
+[8.325s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/colcon-core/packages/mazebot_msgs)
+[8.723s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mazebot_msgs)
+[8.732s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs' for CMake module files
+[8.736s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs' for CMake config files
+[8.739s] Level 1:colcon.colcon_core.shell:create_environment_hook('mazebot_msgs', 'cmake_prefix_path')
+[8.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/cmake_prefix_path.ps1'
+[8.746s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/cmake_prefix_path.dsv'
+[8.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/cmake_prefix_path.sh'
+[8.750s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib'
+[8.751s] Level 1:colcon.colcon_core.shell:create_environment_hook('mazebot_msgs', 'ld_library_path_lib')
+[8.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/ld_library_path_lib.ps1'
+[8.757s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/ld_library_path_lib.dsv'
+[8.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/hook/ld_library_path_lib.sh'
+[8.761s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/bin'
+[8.761s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/pkgconfig/mazebot_msgs.pc'
+[8.762s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/python3.10/site-packages'
+[8.763s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/bin'
+[8.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.ps1'
+[8.771s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.dsv'
+[8.773s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.sh'
+[8.775s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.bash'
+[8.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.zsh'
+[8.779s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/colcon-core/packages/mazebot_msgs)
+[8.780s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/pi/work/maze_bot/programming/mbot_ws/src/robocup' with build type 'ament_python'
+[8.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('robocup', 'ament_prefix_path')
+[8.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup/hook/ament_prefix_path.ps1'
+[8.795s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup/hook/ament_prefix_path.dsv'
+[8.797s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup/hook/ament_prefix_path.sh'
+[8.806s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.807s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.150s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/pi/work/maze_bot/programming/mbot_ws/src/robocup'
+[10.155s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.155s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.961s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/work/maze_bot/programming/mbot_ws/src/robocup': AMENT_PREFIX_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs:/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs:/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver LD_LIBRARY_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/prefix_override:/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages:/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robocup build --build-base /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build install --record /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/install.log --single-version-externally-managed
+[13.375s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup' for CMake module files
+[13.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/work/maze_bot/programming/mbot_ws/src/robocup' returned '0': AMENT_PREFIX_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs:/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs:/home/pi/work/maze_bot/programming/mbot_ws/install/hls_lfcd_lds_driver LD_LIBRARY_PATH=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/prefix_override:/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages:/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robocup build --build-base /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build install --record /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/install.log --single-version-externally-managed
+[13.380s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup' for CMake config files
+[13.389s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib'
+[13.390s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/bin'
+[13.390s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/pkgconfig/robocup.pc'
+[13.391s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages'
+[13.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('robocup', 'pythonpath')
+[13.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup/hook/pythonpath.ps1'
+[13.400s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup/hook/pythonpath.dsv'
+[13.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup/hook/pythonpath.sh'
+[13.404s] Level 1:colcon.colcon_core.environment:checking '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/bin'
+[13.404s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robocup)
+[13.410s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup/package.ps1'
+[13.412s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup/package.dsv'
+[13.414s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup/package.sh'
+[13.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup/package.bash'
+[13.418s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup/package.zsh'
+[13.419s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/colcon-core/packages/robocup)
+[13.421s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.422s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.422s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.422s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.452s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.452s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.452s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.453s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[13.453s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.458s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/work/maze_bot/programming/mbot_ws/install/local_setup.ps1'
+[13.466s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/work/maze_bot/programming/mbot_ws/install/_local_setup_util_ps1.py'
+[13.476s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/work/maze_bot/programming/mbot_ws/install/setup.ps1'
+[13.484s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/work/maze_bot/programming/mbot_ws/install/local_setup.sh'
+[13.487s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/work/maze_bot/programming/mbot_ws/install/_local_setup_util_sh.py'
+[13.490s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/work/maze_bot/programming/mbot_ws/install/setup.sh'
+[13.497s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/work/maze_bot/programming/mbot_ws/install/local_setup.bash'
+[13.500s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/work/maze_bot/programming/mbot_ws/install/setup.bash'
+[13.506s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/work/maze_bot/programming/mbot_ws/install/local_setup.zsh'
+[13.509s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/work/maze_bot/programming/mbot_ws/install/setup.zsh'

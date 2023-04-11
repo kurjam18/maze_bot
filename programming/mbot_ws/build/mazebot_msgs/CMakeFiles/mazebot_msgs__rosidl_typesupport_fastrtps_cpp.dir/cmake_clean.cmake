@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/lidar_scan_processed__type_support.cpp.o"
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/lidar_scan_processed__type_support.cpp.o.d"
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/mazebot_field_orientation__type_support.cpp.o"
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/mazebot_field_orientation__type_support.cpp.o.d"
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/mazebot_neighboring_fields_wall_detection__type_support.cpp.o"
+  "CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/mazebot_neighboring_fields_wall_detection__type_support.cpp.o.d"
+  "libmazebot_msgs__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libmazebot_msgs__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/lidar_scan_processed__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/mazebot_field_orientation__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/mazebot_neighboring_fields_wall_detection__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/lidar_scan_processed__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/mazebot_field_orientation__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

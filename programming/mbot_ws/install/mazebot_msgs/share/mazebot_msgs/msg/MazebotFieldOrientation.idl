@@ -1,0 +1,44 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mazebot_msgs/msg/MazebotFieldOrientation.msg
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/LaserScan.idl"
+#include "std_msgs/msg/Header.idl"
+
+module mazebot_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Mazebot" "\n"
+      "Author: -" "\n"
+      "2023, ver 0.1")
+    struct MazebotFieldOrientation {
+      std_msgs::msg::Header header;
+
+      sensor_msgs::msg::LaserScan laser_scan;
+
+      @unit (value="m")
+      float front_distance;
+
+      @unit (value="m")
+      float rear_distance;
+
+      @unit (value="m")
+      float left_distance;
+
+      @unit (value="m")
+      float right_distance;
+
+      @unit (value="grad")
+      float front_angle_deg;
+
+      @unit (value="grad")
+      float rear_angle_deg;
+
+      @unit (value="grad")
+      float left_angle_deg;
+
+      @unit (value="grad")
+      float right_angle_deg;
+    };
+  };
+};

@@ -1,0 +1,11 @@
+[0.088s] Invoking command in '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs -- -j4 -l4
+[0.732s] [  0%] Built target mazebot_msgs__cpp
+[0.733s] Error copying directory from "/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs/rosidl_generator_py/mazebot_msgs" to "/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs/ament_cmake_python/mazebot_msgs/mazebot_msgs".
+[0.735s] gmake[2]: *** [CMakeFiles/ament_cmake_python_copy_mazebot_msgs.dir/build.make:70: CMakeFiles/ament_cmake_python_copy_mazebot_msgs] Error 1
+[0.739s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_copy_mazebot_msgs.dir/all] Error 2
+[0.739s] gmake[1]: *** Waiting for unfinished jobs....
+[0.878s] [  2%] Built target mazebot_msgs__rosidl_generator_c
+[0.955s] [ 12%] Built target mazebot_msgs__rosidl_typesupport_cpp
+[0.971s] [ 23%] Built target mazebot_msgs__rosidl_typesupport_fastrtps_cpp
+[0.978s] gmake: *** [Makefile:146: all] Error 2
+[0.991s] Invoked command in '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs -- -j4 -l4

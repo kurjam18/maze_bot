@@ -1,0 +1,23 @@
+[4.051s] Invoking command in '/home/pi/work/maze_bot/programming/mbot_ws/src/robocup': PYTHONPATH=/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/prefix_override:/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robocup build --build-base /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build install --record /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/install.log --single-version-externally-managed
+[5.332s] running egg_info
+[5.335s] writing ../../build/robocup/robocup.egg-info/PKG-INFO
+[5.336s] writing dependency_links to ../../build/robocup/robocup.egg-info/dependency_links.txt
+[5.337s] writing entry points to ../../build/robocup/robocup.egg-info/entry_points.txt
+[5.338s] writing requirements to ../../build/robocup/robocup.egg-info/requires.txt
+[5.338s] writing top-level names to ../../build/robocup/robocup.egg-info/top_level.txt
+[5.348s] reading manifest file '../../build/robocup/robocup.egg-info/SOURCES.txt'
+[5.361s] writing manifest file '../../build/robocup/robocup.egg-info/SOURCES.txt'
+[5.361s] running build
+[5.362s] running build_py
+[5.362s] running install
+[5.363s] running install_lib
+[5.366s] running install_data
+[5.367s] running install_egg_info
+[5.373s] removing '/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup-0.0.0-py3.10.egg-info' (and everything under it)
+[5.375s] Copying ../../build/robocup/robocup.egg-info to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup-0.0.0-py3.10.egg-info
+[5.383s] running install_scripts
+[5.461s] Installing remote script to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/robocup
+[5.462s] Installing serial script to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/robocup
+[5.463s] Installing wall_det script to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/robocup
+[5.465s] writing list of installed files to '/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/install.log'
+[5.601s] Invoked command in '/home/pi/work/maze_bot/programming/mbot_ws/src/robocup' returned '0': PYTHONPATH=/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/prefix_override:/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robocup build --build-base /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build install --record /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/install.log --single-version-externally-managed

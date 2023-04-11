@@ -1,0 +1,42 @@
+running egg_info
+creating ../../build/robocup/robocup.egg-info
+writing ../../build/robocup/robocup.egg-info/PKG-INFO
+writing dependency_links to ../../build/robocup/robocup.egg-info/dependency_links.txt
+writing entry points to ../../build/robocup/robocup.egg-info/entry_points.txt
+writing requirements to ../../build/robocup/robocup.egg-info/requires.txt
+writing top-level names to ../../build/robocup/robocup.egg-info/top_level.txt
+writing manifest file '../../build/robocup/robocup.egg-info/SOURCES.txt'
+reading manifest file '../../build/robocup/robocup.egg-info/SOURCES.txt'
+writing manifest file '../../build/robocup/robocup.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build
+creating /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib
+creating /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup
+copying robocup/ros2_serial_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup
+copying robocup/remotecontroll_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup
+copying robocup/__init__.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup
+copying robocup/mazebot_wall_detection.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup
+running install
+running install_lib
+creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup
+copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/ros2_serial_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup
+copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/remotecontroll_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup
+copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/__init__.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup
+copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/mazebot_wall_detection.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup
+byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/ros2_serial_mazebot.py to ros2_serial_mazebot.cpython-310.pyc
+byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/remotecontroll_mazebot.py to remotecontroll_mazebot.cpython-310.pyc
+byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/mazebot_wall_detection.py to mazebot_wall_detection.cpython-310.pyc
+running install_data
+creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index
+creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index/resource_index
+creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index/resource_index/packages
+copying resource/robocup -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index/resource_index/packages
+copying package.xml -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup
+running install_egg_info
+Copying ../../build/robocup/robocup.egg-info to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup-0.0.0-py3.10.egg-info
+running install_scripts
+Installing remote script to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/robocup
+Installing serial script to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/robocup
+writing list of installed files to '/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/install.log'

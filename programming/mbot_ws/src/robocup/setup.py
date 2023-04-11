@@ -1,3 +1,5 @@
+import os
+from glob import glob
 from setuptools import setup
 
 package_name = 'robocup'
@@ -10,6 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name), glob('launch/robocup.launch.py'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -22,6 +25,7 @@ setup(
         'console_scripts': [
             'serial  = robocup.ros2_serial_mazebot:main', 
             'remote = robocup.remotecontroll_mazebot:main', 
+            'wall_det = robocup.mazebot_wall_detection:main'
         ],
     },
 )

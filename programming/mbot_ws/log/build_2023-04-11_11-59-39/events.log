@@ -1,0 +1,718 @@
+[0.000000] (-) TimerEvent: {}
+[0.001712] (mazebot_msgs) JobQueued: {'identifier': 'mazebot_msgs', 'dependencies': OrderedDict()}
+[0.002362] (robocup) JobQueued: {'identifier': 'robocup', 'dependencies': OrderedDict()}
+[0.004112] (mazebot_msgs) JobStarted: {'identifier': 'mazebot_msgs'}
+[0.080897] (robocup) JobStarted: {'identifier': 'robocup'}
+[0.099026] (-) TimerEvent: {}
+[0.145439] (mazebot_msgs) JobProgress: {'identifier': 'mazebot_msgs', 'progress': 'cmake'}
+[0.146236] (mazebot_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/work/maze_bot/programming/mbot_ws/src/mazebot_msgs', '-DCMAKE_INSTALL_PREFIX=/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs'], 'cwd': '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.190.128 52092 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pi/work/ws_robu/install/wiimote/lib:/home/pi/work/ws_robu/install/wiimote_msgs/lib:/home/pi/work/ws_robu/install/turtlebot3_msgs/lib:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces/lib:/home/pi/work/ws_robu/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib::/usr/local/lib:/usr/local/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/work/maze_bot'), ('TERM_PROGRAM_VERSION', '1.77.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a9c93d16-bf51-4057-9401-e3674ff9274d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/work/ws_robu/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-be71a1e55c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/work/ws_robu/install/wiimote:/home/pi/work/ws_robu/install/wiimote_msgs:/home/pi/work/ws_robu/install/turtlebot3:/home/pi/work/ws_robu/install/turtlebot3_teleop:/home/pi/work/ws_robu/install/turtlebot3_bringup:/home/pi/work/ws_robu/install/turtlebot3_node:/home/pi/work/ws_robu/install/turtlebot3_navigation2:/home/pi/work/ws_robu/install/turtlebot3_example:/home/pi/work/ws_robu/install/turtlebot3_msgs:/home/pi/work/ws_robu/install/turtlebot3_description:/home/pi/work/ws_robu/install/turtlebot3_cartographer:/home/pi/work/ws_robu/install/robocup:/home/pi/work/ws_robu/install/ld08_driver:/home/pi/work/ws_robu/install/hls_lfcd_lds_driver:/home/pi/work/ws_robu/install/dynamixel_sdk_examples:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces:/home/pi/work/ws_robu/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.190.128 52092 192.168.190.180 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/work/ws_robu/install/wiimote_msgs/local/lib/python3.10/dist-packages:/home/pi/work/ws_robu/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/turtlebot3_example/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/pi/work/ws_robu/install/robocup/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/work/ws_robu/install/wiimote:/home/pi/work/ws_robu/install/wiimote_msgs:/home/pi/work/ws_robu/install/turtlebot3:/home/pi/work/ws_robu/install/turtlebot3_bringup:/home/pi/work/ws_robu/install/turtlebot3_node:/home/pi/work/ws_robu/install/turtlebot3_navigation2:/home/pi/work/ws_robu/install/turtlebot3_msgs:/home/pi/work/ws_robu/install/turtlebot3_description:/home/pi/work/ws_robu/install/turtlebot3_cartographer:/home/pi/work/ws_robu/install/ld08_driver:/home/pi/work/ws_robu/install/hls_lfcd_lds_driver:/home/pi/work/ws_robu/install/dynamixel_sdk_examples:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces:/home/pi/work/ws_robu/install/dynamixel_sdk:/home/pi/work/ws_robu/install/turtlebot3_teleop:/home/pi/work/ws_robu/install/turtlebot3_example:/home/pi/work/ws_robu/install/robocup:/opt/ros/humble')]), 'shell': False}
+[0.199200] (-) TimerEvent: {}
+[0.299856] (-) TimerEvent: {}
+[0.400681] (-) TimerEvent: {}
+[0.501561] (-) TimerEvent: {}
+[0.602342] (-) TimerEvent: {}
+[0.703069] (-) TimerEvent: {}
+[0.803721] (-) TimerEvent: {}
+[0.904525] (-) TimerEvent: {}
+[1.005160] (-) TimerEvent: {}
+[1.105877] (-) TimerEvent: {}
+[1.206594] (-) TimerEvent: {}
+[1.307422] (-) TimerEvent: {}
+[1.408252] (-) TimerEvent: {}
+[1.509284] (-) TimerEvent: {}
+[1.599157] (mazebot_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[1.611460] (-) TimerEvent: {}
+[1.712236] (-) TimerEvent: {}
+[1.812991] (-) TimerEvent: {}
+[1.913747] (-) TimerEvent: {}
+[2.014526] (-) TimerEvent: {}
+[2.115213] (-) TimerEvent: {}
+[2.215892] (-) TimerEvent: {}
+[2.305008] (mazebot_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[2.316091] (-) TimerEvent: {}
+[2.361955] (mazebot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.416273] (-) TimerEvent: {}
+[2.518328] (-) TimerEvent: {}
+[2.619501] (-) TimerEvent: {}
+[2.721918] (-) TimerEvent: {}
+[2.774046] (mazebot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.799913] (mazebot_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.804518] (mazebot_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.807824] (mazebot_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.822113] (-) TimerEvent: {}
+[2.824880] (mazebot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.922321] (-) TimerEvent: {}
+[3.023083] (-) TimerEvent: {}
+[3.123979] (-) TimerEvent: {}
+[3.225000] (-) TimerEvent: {}
+[3.253229] (mazebot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.282137] (mazebot_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.283405] (mazebot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.285132] (mazebot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.325171] (-) TimerEvent: {}
+[3.351682] (mazebot_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.425393] (-) TimerEvent: {}
+[3.527023] (-) TimerEvent: {}
+[3.629569] (-) TimerEvent: {}
+[3.694832] (robocup) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/robocup', 'build', '--build-base', '/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build', 'install', '--record', '/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/install.log', '--single-version-externally-managed'], 'cwd': '/home/pi/work/maze_bot/programming/mbot_ws/src/robocup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.190.128 52092 22', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/pi/work/ws_robu/install/wiimote/lib:/home/pi/work/ws_robu/install/wiimote_msgs/lib:/home/pi/work/ws_robu/install/turtlebot3_msgs/lib:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces/lib:/home/pi/work/ws_robu/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib::/usr/local/lib:/usr/local/lib', 'BROWSER': '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/work/maze_bot', 'TERM_PROGRAM_VERSION': '1.77.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-a9c93d16-bf51-4057-9401-e3674ff9274d.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/pi/work/ws_robu/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-be71a1e55c.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/pi/work/ws_robu/install/wiimote:/home/pi/work/ws_robu/install/wiimote_msgs:/home/pi/work/ws_robu/install/turtlebot3:/home/pi/work/ws_robu/install/turtlebot3_teleop:/home/pi/work/ws_robu/install/turtlebot3_bringup:/home/pi/work/ws_robu/install/turtlebot3_node:/home/pi/work/ws_robu/install/turtlebot3_navigation2:/home/pi/work/ws_robu/install/turtlebot3_example:/home/pi/work/ws_robu/install/turtlebot3_msgs:/home/pi/work/ws_robu/install/turtlebot3_description:/home/pi/work/ws_robu/install/turtlebot3_cartographer:/home/pi/work/ws_robu/install/robocup:/home/pi/work/ws_robu/install/ld08_driver:/home/pi/work/ws_robu/install/hls_lfcd_lds_driver:/home/pi/work/ws_robu/install/dynamixel_sdk_examples:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces:/home/pi/work/ws_robu/install/dynamixel_sdk:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/pi/work/maze_bot/programming/mbot_ws/build/robocup', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.190.128 52092 192.168.190.180 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/prefix_override:/home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/wiimote_msgs/local/lib/python3.10/dist-packages:/home/pi/work/ws_robu/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/turtlebot3_example/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/pi/work/ws_robu/install/robocup/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/work/ws_robu/install/wiimote:/home/pi/work/ws_robu/install/wiimote_msgs:/home/pi/work/ws_robu/install/turtlebot3:/home/pi/work/ws_robu/install/turtlebot3_bringup:/home/pi/work/ws_robu/install/turtlebot3_node:/home/pi/work/ws_robu/install/turtlebot3_navigation2:/home/pi/work/ws_robu/install/turtlebot3_msgs:/home/pi/work/ws_robu/install/turtlebot3_description:/home/pi/work/ws_robu/install/turtlebot3_cartographer:/home/pi/work/ws_robu/install/ld08_driver:/home/pi/work/ws_robu/install/hls_lfcd_lds_driver:/home/pi/work/ws_robu/install/dynamixel_sdk_examples:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces:/home/pi/work/ws_robu/install/dynamixel_sdk'}, 'shell': False}
+[3.729675] (-) TimerEvent: {}
+[3.830532] (-) TimerEvent: {}
+[3.931531] (-) TimerEvent: {}
+[4.036155] (-) TimerEvent: {}
+[4.137072] (-) TimerEvent: {}
+[4.238298] (-) TimerEvent: {}
+[4.339079] (-) TimerEvent: {}
+[4.439788] (-) TimerEvent: {}
+[4.540492] (-) TimerEvent: {}
+[4.567885] (mazebot_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[4.640725] (-) TimerEvent: {}
+[4.741436] (-) TimerEvent: {}
+[4.842153] (-) TimerEvent: {}
+[4.942894] (-) TimerEvent: {}
+[5.043964] (-) TimerEvent: {}
+[5.144693] (-) TimerEvent: {}
+[5.207500] (robocup) StdoutLine: {'line': b'running egg_info\n'}
+[5.209340] (robocup) StdoutLine: {'line': b'creating ../../build/robocup/robocup.egg-info\n'}
+[5.210135] (robocup) StdoutLine: {'line': b'writing ../../build/robocup/robocup.egg-info/PKG-INFO\n'}
+[5.211273] (robocup) StdoutLine: {'line': b'writing dependency_links to ../../build/robocup/robocup.egg-info/dependency_links.txt\n'}
+[5.211898] (robocup) StdoutLine: {'line': b'writing entry points to ../../build/robocup/robocup.egg-info/entry_points.txt\n'}
+[5.212459] (robocup) StdoutLine: {'line': b'writing requirements to ../../build/robocup/robocup.egg-info/requires.txt\n'}
+[5.212955] (robocup) StdoutLine: {'line': b'writing top-level names to ../../build/robocup/robocup.egg-info/top_level.txt\n'}
+[5.214006] (robocup) StdoutLine: {'line': b"writing manifest file '../../build/robocup/robocup.egg-info/SOURCES.txt'\n"}
+[5.221275] (robocup) StdoutLine: {'line': b"reading manifest file '../../build/robocup/robocup.egg-info/SOURCES.txt'\n"}
+[5.224520] (robocup) StdoutLine: {'line': b"writing manifest file '../../build/robocup/robocup.egg-info/SOURCES.txt'\n"}
+[5.225132] (robocup) StdoutLine: {'line': b'running build\n'}
+[5.225572] (robocup) StdoutLine: {'line': b'running build_py\n'}
+[5.226057] (robocup) StdoutLine: {'line': b'creating /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build\n'}
+[5.226689] (robocup) StdoutLine: {'line': b'creating /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib\n'}
+[5.227232] (robocup) StdoutLine: {'line': b'creating /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup\n'}
+[5.227629] (robocup) StdoutLine: {'line': b'copying robocup/ros2_serial_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup\n'}
+[5.228274] (robocup) StdoutLine: {'line': b'copying robocup/remotecontroll_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup\n'}
+[5.228870] (robocup) StdoutLine: {'line': b'copying robocup/__init__.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup\n'}
+[5.229531] (robocup) StdoutLine: {'line': b'copying robocup/mazebot_wall_detection.py -> /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup\n'}
+[5.230888] (robocup) StdoutLine: {'line': b'running install\n'}
+[5.232290] (robocup) StdoutLine: {'line': b'running install_lib\n'}
+[5.235342] (robocup) StdoutLine: {'line': b'creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup\n'}
+[5.235960] (robocup) StdoutLine: {'line': b'copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/ros2_serial_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup\n'}
+[5.236673] (robocup) StdoutLine: {'line': b'copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/remotecontroll_mazebot.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup\n'}
+[5.237405] (robocup) StdoutLine: {'line': b'copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/__init__.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup\n'}
+[5.238106] (robocup) StdoutLine: {'line': b'copying /home/pi/work/maze_bot/programming/mbot_ws/build/robocup/build/lib/robocup/mazebot_wall_detection.py -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup\n'}
+[5.241346] (robocup) StdoutLine: {'line': b'byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/ros2_serial_mazebot.py to ros2_serial_mazebot.cpython-310.pyc\n'}
+[5.244266] (robocup) StdoutLine: {'line': b'byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/remotecontroll_mazebot.py to remotecontroll_mazebot.cpython-310.pyc\n'}
+[5.244759] (-) TimerEvent: {}
+[5.247608] (robocup) StdoutLine: {'line': b'byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/__init__.py to __init__.cpython-310.pyc\n'}
+[5.248959] (robocup) StdoutLine: {'line': b'byte-compiling /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup/mazebot_wall_detection.py to mazebot_wall_detection.cpython-310.pyc\n'}
+[5.258153] (robocup) StdoutLine: {'line': b'running install_data\n'}
+[5.260561] (robocup) StdoutLine: {'line': b'creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index\n'}
+[5.261193] (robocup) StdoutLine: {'line': b'creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index/resource_index\n'}
+[5.261670] (robocup) StdoutLine: {'line': b'creating /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index/resource_index/packages\n'}
+[5.262101] (robocup) StdoutLine: {'line': b'copying resource/robocup -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/ament_index/resource_index/packages\n'}
+[5.262581] (robocup) StdoutLine: {'line': b'copying package.xml -> /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/share/robocup\n'}
+[5.263161] (robocup) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.268922] (robocup) StdoutLine: {'line': b'Copying ../../build/robocup/robocup.egg-info to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/python3.10/site-packages/robocup-0.0.0-py3.10.egg-info\n'}
+[5.274396] (robocup) StdoutLine: {'line': b'running install_scripts\n'}
+[5.344935] (-) TimerEvent: {}
+[5.355028] (robocup) StdoutLine: {'line': b'Installing remote script to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/robocup\n'}
+[5.355796] (robocup) StdoutLine: {'line': b'Installing serial script to /home/pi/work/maze_bot/programming/mbot_ws/install/robocup/lib/robocup\n'}
+[5.357266] (robocup) StdoutLine: {'line': b"writing list of installed files to '/home/pi/work/maze_bot/programming/mbot_ws/build/robocup/install.log'\n"}
+[5.445327] (-) TimerEvent: {}
+[5.488134] (robocup) CommandEnded: {'returncode': 0}
+[5.545546] (-) TimerEvent: {}
+[5.575813] (robocup) JobEnded: {'identifier': 'robocup', 'rc': 0}
+[5.642649] (mazebot_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[5.645689] (-) TimerEvent: {}
+[5.746308] (-) TimerEvent: {}
+[5.847088] (-) TimerEvent: {}
+[5.947901] (-) TimerEvent: {}
+[6.048614] (-) TimerEvent: {}
+[6.149276] (-) TimerEvent: {}
+[6.249987] (-) TimerEvent: {}
+[6.258771] (mazebot_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.350193] (-) TimerEvent: {}
+[6.368117] (mazebot_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.450392] (-) TimerEvent: {}
+[6.495695] (mazebot_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.550557] (-) TimerEvent: {}
+[6.651245] (-) TimerEvent: {}
+[6.654236] (mazebot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.751419] (-) TimerEvent: {}
+[6.852201] (-) TimerEvent: {}
+[6.879615] (mazebot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.952376] (-) TimerEvent: {}
+[7.053278] (-) TimerEvent: {}
+[7.154903] (-) TimerEvent: {}
+[7.255683] (-) TimerEvent: {}
+[7.266131] (mazebot_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[7.355834] (-) TimerEvent: {}
+[7.456555] (-) TimerEvent: {}
+[7.557251] (-) TimerEvent: {}
+[7.657936] (-) TimerEvent: {}
+[7.758640] (-) TimerEvent: {}
+[7.858055] (mazebot_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[7.858728] (-) TimerEvent: {}
+[7.959365] (-) TimerEvent: {}
+[8.060032] (-) TimerEvent: {}
+[8.160734] (-) TimerEvent: {}
+[8.261587] (-) TimerEvent: {}
+[8.362444] (-) TimerEvent: {}
+[8.463187] (-) TimerEvent: {}
+[8.563830] (-) TimerEvent: {}
+[8.664441] (-) TimerEvent: {}
+[8.765140] (-) TimerEvent: {}
+[8.865911] (-) TimerEvent: {}
+[8.966969] (-) TimerEvent: {}
+[9.068121] (-) TimerEvent: {}
+[9.168840] (-) TimerEvent: {}
+[9.269519] (-) TimerEvent: {}
+[9.370230] (-) TimerEvent: {}
+[9.471905] (-) TimerEvent: {}
+[9.542693] (mazebot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[9.572037] (-) TimerEvent: {}
+[9.672702] (-) TimerEvent: {}
+[9.773346] (-) TimerEvent: {}
+[9.874028] (-) TimerEvent: {}
+[9.974715] (-) TimerEvent: {}
+[10.075533] (-) TimerEvent: {}
+[10.176463] (-) TimerEvent: {}
+[10.277212] (-) TimerEvent: {}
+[10.377908] (-) TimerEvent: {}
+[10.478637] (-) TimerEvent: {}
+[10.579320] (-) TimerEvent: {}
+[10.679929] (-) TimerEvent: {}
+[10.780605] (-) TimerEvent: {}
+[10.881315] (-) TimerEvent: {}
+[10.982041] (-) TimerEvent: {}
+[11.082895] (-) TimerEvent: {}
+[11.183960] (-) TimerEvent: {}
+[11.284707] (-) TimerEvent: {}
+[11.385430] (-) TimerEvent: {}
+[11.486152] (-) TimerEvent: {}
+[11.586784] (-) TimerEvent: {}
+[11.687467] (-) TimerEvent: {}
+[11.788124] (-) TimerEvent: {}
+[11.889013] (-) TimerEvent: {}
+[11.990058] (-) TimerEvent: {}
+[12.023710] (mazebot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[12.090243] (-) TimerEvent: {}
+[12.190962] (-) TimerEvent: {}
+[12.291588] (-) TimerEvent: {}
+[12.392246] (-) TimerEvent: {}
+[12.493119] (-) TimerEvent: {}
+[12.593856] (-) TimerEvent: {}
+[12.694507] (-) TimerEvent: {}
+[12.795202] (-) TimerEvent: {}
+[12.896011] (-) TimerEvent: {}
+[12.942955] (mazebot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[12.996150] (-) TimerEvent: {}
+[13.072765] (mazebot_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") \n'}
+[13.096300] (-) TimerEvent: {}
+[13.117919] (mazebot_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[13.196445] (-) TimerEvent: {}
+[13.289347] (mazebot_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") \n'}
+[13.290684] (mazebot_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[13.291604] (mazebot_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[13.292324] (mazebot_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[13.296655] (-) TimerEvent: {}
+[13.397735] (-) TimerEvent: {}
+[13.408408] (mazebot_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[13.497863] (-) TimerEvent: {}
+[13.598496] (-) TimerEvent: {}
+[13.699352] (-) TimerEvent: {}
+[13.800183] (-) TimerEvent: {}
+[13.881504] (mazebot_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.900343] (-) TimerEvent: {}
+[14.001005] (-) TimerEvent: {}
+[14.097147] (mazebot_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[14.101148] (-) TimerEvent: {}
+[14.112024] (mazebot_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs\n'}
+[14.153070] (mazebot_msgs) CommandEnded: {'returncode': 0}
+[14.154886] (mazebot_msgs) JobProgress: {'identifier': 'mazebot_msgs', 'progress': 'build'}
+[14.159879] (mazebot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs', '--', '-j4', '-l4'], 'cwd': '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.190.128 52092 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pi/work/ws_robu/install/wiimote/lib:/home/pi/work/ws_robu/install/wiimote_msgs/lib:/home/pi/work/ws_robu/install/turtlebot3_msgs/lib:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces/lib:/home/pi/work/ws_robu/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib::/usr/local/lib:/usr/local/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/work/maze_bot'), ('TERM_PROGRAM_VERSION', '1.77.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a9c93d16-bf51-4057-9401-e3674ff9274d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/work/ws_robu/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-be71a1e55c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/work/ws_robu/install/wiimote:/home/pi/work/ws_robu/install/wiimote_msgs:/home/pi/work/ws_robu/install/turtlebot3:/home/pi/work/ws_robu/install/turtlebot3_teleop:/home/pi/work/ws_robu/install/turtlebot3_bringup:/home/pi/work/ws_robu/install/turtlebot3_node:/home/pi/work/ws_robu/install/turtlebot3_navigation2:/home/pi/work/ws_robu/install/turtlebot3_example:/home/pi/work/ws_robu/install/turtlebot3_msgs:/home/pi/work/ws_robu/install/turtlebot3_description:/home/pi/work/ws_robu/install/turtlebot3_cartographer:/home/pi/work/ws_robu/install/robocup:/home/pi/work/ws_robu/install/ld08_driver:/home/pi/work/ws_robu/install/hls_lfcd_lds_driver:/home/pi/work/ws_robu/install/dynamixel_sdk_examples:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces:/home/pi/work/ws_robu/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.190.128 52092 192.168.190.180 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/work/ws_robu/install/wiimote_msgs/local/lib/python3.10/dist-packages:/home/pi/work/ws_robu/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/turtlebot3_example/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/pi/work/ws_robu/install/robocup/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/work/ws_robu/install/wiimote:/home/pi/work/ws_robu/install/wiimote_msgs:/home/pi/work/ws_robu/install/turtlebot3:/home/pi/work/ws_robu/install/turtlebot3_bringup:/home/pi/work/ws_robu/install/turtlebot3_node:/home/pi/work/ws_robu/install/turtlebot3_navigation2:/home/pi/work/ws_robu/install/turtlebot3_msgs:/home/pi/work/ws_robu/install/turtlebot3_description:/home/pi/work/ws_robu/install/turtlebot3_cartographer:/home/pi/work/ws_robu/install/ld08_driver:/home/pi/work/ws_robu/install/hls_lfcd_lds_driver:/home/pi/work/ws_robu/install/dynamixel_sdk_examples:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces:/home/pi/work/ws_robu/install/dynamixel_sdk:/home/pi/work/ws_robu/install/turtlebot3_teleop:/home/pi/work/ws_robu/install/turtlebot3_example:/home/pi/work/ws_robu/install/robocup:/opt/ros/humble')]), 'shell': False}
+[14.201387] (-) TimerEvent: {}
+[14.302155] (-) TimerEvent: {}
+[14.377060] (mazebot_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[14.402341] (-) TimerEvent: {}
+[14.435275] (mazebot_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[14.479197] (mazebot_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_mazebot_msgs\n'}
+[14.502589] (-) TimerEvent: {}
+[14.607672] (-) TimerEvent: {}
+[14.713919] (-) TimerEvent: {}
+[14.820016] (-) TimerEvent: {}
+[14.938465] (-) TimerEvent: {}
+[15.040323] (-) TimerEvent: {}
+[15.141157] (-) TimerEvent: {}
+[15.242160] (-) TimerEvent: {}
+[15.343066] (-) TimerEvent: {}
+[15.444007] (-) TimerEvent: {}
+[15.544688] (-) TimerEvent: {}
+[15.645370] (-) TimerEvent: {}
+[15.746050] (-) TimerEvent: {}
+[15.846830] (-) TimerEvent: {}
+[15.957480] (-) TimerEvent: {}
+[16.059432] (-) TimerEvent: {}
+[16.091248] (mazebot_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[16.093362] (mazebot_msgs) StdoutLine: {'line': b'creating mazebot_msgs.egg-info\n'}
+[16.094279] (mazebot_msgs) StdoutLine: {'line': b'writing mazebot_msgs.egg-info/PKG-INFO\n'}
+[16.095206] (mazebot_msgs) StdoutLine: {'line': b'writing dependency_links to mazebot_msgs.egg-info/dependency_links.txt\n'}
+[16.096202] (mazebot_msgs) StdoutLine: {'line': b'writing top-level names to mazebot_msgs.egg-info/top_level.txt\n'}
+[16.097583] (mazebot_msgs) StdoutLine: {'line': b"writing manifest file 'mazebot_msgs.egg-info/SOURCES.txt'\n"}
+[16.107031] (mazebot_msgs) StdoutLine: {'line': b"reading manifest file 'mazebot_msgs.egg-info/SOURCES.txt'\n"}
+[16.110337] (mazebot_msgs) StdoutLine: {'line': b"writing manifest file 'mazebot_msgs.egg-info/SOURCES.txt'\n"}
+[16.160129] (-) TimerEvent: {}
+[16.264757] (mazebot_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_mazebot_msgs_egg\n'}
+[16.265567] (-) TimerEvent: {}
+[16.368747] (-) TimerEvent: {}
+[16.469635] (-) TimerEvent: {}
+[16.570681] (-) TimerEvent: {}
+[16.671579] (-) TimerEvent: {}
+[16.772857] (-) TimerEvent: {}
+[16.874043] (-) TimerEvent: {}
+[16.975418] (-) TimerEvent: {}
+[17.026635] (mazebot_msgs) StdoutLine: {'line': b'[  4%] Built target mazebot_msgs__cpp\n'}
+[17.075760] (-) TimerEvent: {}
+[17.096665] (mazebot_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[17.130558] (mazebot_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[17.151409] (mazebot_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[17.175937] (-) TimerEvent: {}
+[17.217364] (mazebot_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_generator_c.dir/rosidl_generator_c/mazebot_msgs/msg/detail/lidar_scan_processed__functions.c.o\x1b[0m\n'}
+[17.276139] (-) TimerEvent: {}
+[17.379024] (-) TimerEvent: {}
+[17.481557] (-) TimerEvent: {}
+[17.584075] (-) TimerEvent: {}
+[17.686649] (-) TimerEvent: {}
+[17.745830] (mazebot_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_generator_c.dir/rosidl_generator_c/mazebot_msgs/msg/detail/mazebot_field_orientation__functions.c.o\x1b[0m\n'}
+[17.786871] (-) TimerEvent: {}
+[17.887851] (-) TimerEvent: {}
+[17.988648] (-) TimerEvent: {}
+[18.078351] (mazebot_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_generator_c.dir/rosidl_generator_c/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__functions.c.o\x1b[0m\n'}
+[18.088884] (-) TimerEvent: {}
+[18.193424] (-) TimerEvent: {}
+[18.298101] (-) TimerEvent: {}
+[18.381668] (mazebot_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libmazebot_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[18.398369] (-) TimerEvent: {}
+[18.503009] (-) TimerEvent: {}
+[18.608925] (-) TimerEvent: {}
+[18.613953] (mazebot_msgs) StdoutLine: {'line': b'[ 19%] Built target mazebot_msgs__rosidl_generator_c\n'}
+[18.679024] (mazebot_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[18.709276] (-) TimerEvent: {}
+[18.810458] (-) TimerEvent: {}
+[18.911469] (-) TimerEvent: {}
+[19.012836] (-) TimerEvent: {}
+[19.113894] (-) TimerEvent: {}
+[19.214695] (-) TimerEvent: {}
+[19.317302] (-) TimerEvent: {}
+[19.421521] (-) TimerEvent: {}
+[19.443193] (mazebot_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mazebot_msgs/msg/lidar_scan_processed__type_support.cpp.o\x1b[0m\n'}
+[19.521809] (-) TimerEvent: {}
+[19.625221] (-) TimerEvent: {}
+[19.727761] (-) TimerEvent: {}
+[19.830437] (-) TimerEvent: {}
+[19.836021] (mazebot_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mazebot_msgs/msg/detail/lidar_scan_processed__type_support.cpp.o\x1b[0m\n'}
+[19.930637] (-) TimerEvent: {}
+[20.002463] (mazebot_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/lidar_scan_processed__type_support.cpp.o\x1b[0m\n'}
+[20.031085] (-) TimerEvent: {}
+[20.138808] (-) TimerEvent: {}
+[20.239919] (-) TimerEvent: {}
+[20.340917] (-) TimerEvent: {}
+[20.442310] (-) TimerEvent: {}
+[20.543245] (-) TimerEvent: {}
+[20.648946] (-) TimerEvent: {}
+[20.755442] (-) TimerEvent: {}
+[20.863467] (-) TimerEvent: {}
+[20.969458] (-) TimerEvent: {}
+[21.075850] (-) TimerEvent: {}
+[21.176722] (-) TimerEvent: {}
+[21.277849] (-) TimerEvent: {}
+[21.380013] (-) TimerEvent: {}
+[21.481078] (-) TimerEvent: {}
+[21.564630] (mazebot_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mazebot_msgs/msg/mazebot_field_orientation__type_support.cpp.o\x1b[0m\n'}
+[21.581355] (-) TimerEvent: {}
+[21.682492] (-) TimerEvent: {}
+[21.760152] (mazebot_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mazebot_msgs/msg/detail/lidar_scan_processed__type_support_c.cpp.o\x1b[0m\n'}
+[21.782812] (-) TimerEvent: {}
+[21.883832] (-) TimerEvent: {}
+[21.984834] (-) TimerEvent: {}
+[22.085911] (-) TimerEvent: {}
+[22.187331] (-) TimerEvent: {}
+[22.288622] (-) TimerEvent: {}
+[22.389724] (-) TimerEvent: {}
+[22.490869] (-) TimerEvent: {}
+[22.531576] (mazebot_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support.cpp.o\x1b[0m\n'}
+[22.591457] (-) TimerEvent: {}
+[22.692584] (-) TimerEvent: {}
+[22.734606] (mazebot_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/mazebot_field_orientation__type_support.cpp.o\x1b[0m\n'}
+[22.792891] (-) TimerEvent: {}
+[22.894113] (-) TimerEvent: {}
+[22.995493] (-) TimerEvent: {}
+[23.096641] (-) TimerEvent: {}
+[23.198175] (-) TimerEvent: {}
+[23.293900] (mazebot_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mazebot_msgs/msg/mazebot_neighboring_fields_wall_detection__type_support.cpp.o\x1b[0m\n'}
+[23.298413] (-) TimerEvent: {}
+[23.399457] (-) TimerEvent: {}
+[23.500688] (-) TimerEvent: {}
+[23.601815] (-) TimerEvent: {}
+[23.702873] (-) TimerEvent: {}
+[23.804006] (-) TimerEvent: {}
+[23.905464] (-) TimerEvent: {}
+[24.007034] (-) TimerEvent: {}
+[24.106630] (mazebot_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support_c.cpp.o\x1b[0m\n'}
+[24.108035] (-) TimerEvent: {}
+[24.209271] (-) TimerEvent: {}
+[24.310444] (-) TimerEvent: {}
+[24.411523] (-) TimerEvent: {}
+[24.512622] (-) TimerEvent: {}
+[24.613758] (-) TimerEvent: {}
+[24.715019] (-) TimerEvent: {}
+[24.816189] (-) TimerEvent: {}
+[24.917746] (-) TimerEvent: {}
+[25.018974] (-) TimerEvent: {}
+[25.120518] (-) TimerEvent: {}
+[25.134971] (mazebot_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support.cpp.o\x1b[0m\n'}
+[25.191106] (mazebot_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libmazebot_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[25.220728] (-) TimerEvent: {}
+[25.321764] (-) TimerEvent: {}
+[25.422743] (-) TimerEvent: {}
+[25.445457] (mazebot_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mazebot_msgs/msg/detail/dds_fastrtps/mazebot_neighboring_fields_wall_detection__type_support.cpp.o\x1b[0m\n'}
+[25.450423] (mazebot_msgs) StdoutLine: {'line': b'[ 46%] Built target mazebot_msgs__rosidl_typesupport_cpp\n'}
+[25.516729] (mazebot_msgs) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[25.523062] (-) TimerEvent: {}
+[25.626092] (-) TimerEvent: {}
+[25.730602] (-) TimerEvent: {}
+[25.834595] (-) TimerEvent: {}
+[25.940103] (-) TimerEvent: {}
+[26.045244] (-) TimerEvent: {}
+[26.151121] (-) TimerEvent: {}
+[26.256935] (-) TimerEvent: {}
+[26.363987] (-) TimerEvent: {}
+[26.470241] (-) TimerEvent: {}
+[26.503004] (mazebot_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support_c.cpp.o\x1b[0m\n'}
+[26.570565] (-) TimerEvent: {}
+[26.677790] (-) TimerEvent: {}
+[26.783328] (-) TimerEvent: {}
+[26.887390] (-) TimerEvent: {}
+[26.988343] (-) TimerEvent: {}
+[27.089337] (-) TimerEvent: {}
+[27.190432] (-) TimerEvent: {}
+[27.291600] (-) TimerEvent: {}
+[27.392693] (-) TimerEvent: {}
+[27.493906] (-) TimerEvent: {}
+[27.595178] (-) TimerEvent: {}
+[27.696237] (-) TimerEvent: {}
+[27.729284] (mazebot_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libmazebot_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[27.796552] (-) TimerEvent: {}
+[27.897578] (-) TimerEvent: {}
+[27.998813] (-) TimerEvent: {}
+[28.100227] (-) TimerEvent: {}
+[28.105327] (mazebot_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libmazebot_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[28.200475] (-) TimerEvent: {}
+[28.201478] (mazebot_msgs) StdoutLine: {'line': b'[ 55%] Built target mazebot_msgs__rosidl_typesupport_introspection_cpp\n'}
+[28.273717] (mazebot_msgs) StdoutLine: {'line': b'[ 57%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[28.300859] (-) TimerEvent: {}
+[28.402157] (-) TimerEvent: {}
+[28.503830] (-) TimerEvent: {}
+[28.567375] (mazebot_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/lidar_scan_processed__type_support.c.o\x1b[0m\n'}
+[28.603508] (mazebot_msgs) StdoutLine: {'line': b'[ 59%] Built target mazebot_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[28.604973] (-) TimerEvent: {}
+[28.663668] (mazebot_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support.c.o\x1b[0m\n'}
+[28.705092] (-) TimerEvent: {}
+[28.809657] (-) TimerEvent: {}
+[28.910624] (-) TimerEvent: {}
+[28.924923] (mazebot_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support.c.o\x1b[0m\n'}
+[29.010893] (-) TimerEvent: {}
+[29.048176] (mazebot_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libmazebot_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[29.111105] (-) TimerEvent: {}
+[29.204358] (mazebot_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libmazebot_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[29.211326] (-) TimerEvent: {}
+[29.320922] (-) TimerEvent: {}
+[29.424747] (mazebot_msgs) StdoutLine: {'line': b'[ 68%] Built target mazebot_msgs__rosidl_typesupport_introspection_c\n'}
+[29.425277] (-) TimerEvent: {}
+[29.466425] (mazebot_msgs) StdoutLine: {'line': b'[ 68%] Built target mazebot_msgs__rosidl_typesupport_fastrtps_c\n'}
+[29.525503] (-) TimerEvent: {}
+[29.626149] (-) TimerEvent: {}
+[29.726881] (-) TimerEvent: {}
+[29.827578] (-) TimerEvent: {}
+[29.928258] (-) TimerEvent: {}
+[30.028957] (-) TimerEvent: {}
+[30.129603] (-) TimerEvent: {}
+[30.230337] (-) TimerEvent: {}
+[30.331160] (-) TimerEvent: {}
+[30.384652] (mazebot_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mazebot_msgs/msg/lidar_scan_processed__type_support.cpp.o\x1b[0m\n'}
+[30.386372] (mazebot_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mazebot_msgs/msg/mazebot_field_orientation__type_support.cpp.o\x1b[0m\n'}
+[30.390338] (mazebot_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/mazebot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mazebot_msgs/msg/mazebot_neighboring_fields_wall_detection__type_support.cpp.o\x1b[0m\n'}
+[30.431420] (-) TimerEvent: {}
+[30.532345] (-) TimerEvent: {}
+[30.575221] (mazebot_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libmazebot_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[30.632546] (-) TimerEvent: {}
+[30.733509] (-) TimerEvent: {}
+[30.772778] (mazebot_msgs) StdoutLine: {'line': b'[ 76%] Built target mazebot_msgs__rosidl_typesupport_c\n'}
+[30.833745] (-) TimerEvent: {}
+[30.884008] (mazebot_msgs) StdoutLine: {'line': b'[ 76%] Built target mazebot_msgs\n'}
+[30.933945] (-) TimerEvent: {}
+[30.998172] (mazebot_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[31.034158] (-) TimerEvent: {}
+[31.134878] (-) TimerEvent: {}
+[31.235634] (-) TimerEvent: {}
+[31.336428] (-) TimerEvent: {}
+[31.437114] (-) TimerEvent: {}
+[31.537799] (-) TimerEvent: {}
+[31.638555] (-) TimerEvent: {}
+[31.739477] (-) TimerEvent: {}
+[31.840189] (-) TimerEvent: {}
+[31.940815] (-) TimerEvent: {}
+[32.041472] (-) TimerEvent: {}
+[32.142130] (-) TimerEvent: {}
+[32.242756] (-) TimerEvent: {}
+[32.343444] (-) TimerEvent: {}
+[32.444098] (-) TimerEvent: {}
+[32.544802] (-) TimerEvent: {}
+[32.645471] (-) TimerEvent: {}
+[32.746169] (-) TimerEvent: {}
+[32.846801] (-) TimerEvent: {}
+[32.947512] (-) TimerEvent: {}
+[33.048144] (-) TimerEvent: {}
+[33.148783] (-) TimerEvent: {}
+[33.249504] (-) TimerEvent: {}
+[33.350195] (-) TimerEvent: {}
+[33.450837] (-) TimerEvent: {}
+[33.551503] (-) TimerEvent: {}
+[33.652171] (-) TimerEvent: {}
+[33.752807] (-) TimerEvent: {}
+[33.853510] (-) TimerEvent: {}
+[33.954199] (-) TimerEvent: {}
+[34.055024] (-) TimerEvent: {}
+[34.156402] (-) TimerEvent: {}
+[34.246495] (mazebot_msgs) StdoutLine: {'line': b'[ 78%] Built target mazebot_msgs__py\n'}
+[34.256567] (-) TimerEvent: {}
+[34.357436] (-) TimerEvent: {}
+[34.364527] (mazebot_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_generator_py.dir/rosidl_generator_py/mazebot_msgs/msg/_lidar_scan_processed_s.c.o\x1b[0m\n'}
+[34.366462] (mazebot_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_generator_py.dir/rosidl_generator_py/mazebot_msgs/msg/_mazebot_field_orientation_s.c.o\x1b[0m\n'}
+[34.368584] (mazebot_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_generator_py.dir/rosidl_generator_py/mazebot_msgs/msg/_mazebot_neighboring_fields_wall_detection_s.c.o\x1b[0m\n'}
+[34.457650] (-) TimerEvent: {}
+[34.558480] (-) TimerEvent: {}
+[34.661951] (-) TimerEvent: {}
+[34.763156] (-) TimerEvent: {}
+[34.864735] (-) TimerEvent: {}
+[34.965705] (-) TimerEvent: {}
+[35.068672] (-) TimerEvent: {}
+[35.177644] (-) TimerEvent: {}
+[35.205173] (mazebot_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mazebot_msgs/libmazebot_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[35.277870] (-) TimerEvent: {}
+[35.378801] (-) TimerEvent: {}
+[35.443203] (mazebot_msgs) StdoutLine: {'line': b'[ 87%] Built target mazebot_msgs__rosidl_generator_py\n'}
+[35.479059] (-) TimerEvent: {}
+[35.557694] (mazebot_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/mazebot_msgs/_mazebot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[35.560572] (mazebot_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/mazebot_msgs/_mazebot_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[35.562109] (mazebot_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/mazebot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/mazebot_msgs/_mazebot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[35.579278] (-) TimerEvent: {}
+[35.680234] (-) TimerEvent: {}
+[35.781648] (-) TimerEvent: {}
+[35.883788] (-) TimerEvent: {}
+[35.984581] (-) TimerEvent: {}
+[36.085543] (-) TimerEvent: {}
+[36.179138] (mazebot_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[36.180859] (mazebot_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[36.182185] (mazebot_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[36.185716] (-) TimerEvent: {}
+[36.288193] (-) TimerEvent: {}
+[36.400415] (-) TimerEvent: {}
+[36.512743] (-) TimerEvent: {}
+[36.532507] (mazebot_msgs) StdoutLine: {'line': b'[100%] Built target mazebot_msgs__rosidl_typesupport_c__pyext\n'}
+[36.533680] (mazebot_msgs) StdoutLine: {'line': b'[100%] Built target mazebot_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[36.537141] (mazebot_msgs) StdoutLine: {'line': b'[100%] Built target mazebot_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[36.590143] (mazebot_msgs) CommandEnded: {'returncode': 0}
+[36.612917] (-) TimerEvent: {}
+[36.714258] (-) TimerEvent: {}
+[36.814895] (-) TimerEvent: {}
+[36.915588] (-) TimerEvent: {}
+[37.016599] (-) TimerEvent: {}
+[37.117373] (-) TimerEvent: {}
+[37.219153] (-) TimerEvent: {}
+[37.317431] (mazebot_msgs) JobProgress: {'identifier': 'mazebot_msgs', 'progress': 'install'}
+[37.320167] (-) TimerEvent: {}
+[37.360251] (mazebot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs'], 'cwd': '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.190.128 52092 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pi/work/ws_robu/install/wiimote/lib:/home/pi/work/ws_robu/install/wiimote_msgs/lib:/home/pi/work/ws_robu/install/turtlebot3_msgs/lib:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces/lib:/home/pi/work/ws_robu/install/dynamixel_sdk/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib::/usr/local/lib:/usr/local/lib'), ('BROWSER', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi/work/maze_bot'), ('TERM_PROGRAM_VERSION', '1.77.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-a9c93d16-bf51-4057-9401-e3674ff9274d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/pi/work/ws_robu/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.vscode-server/bin/b7886d7461186a5eac768481578c1d7ca80e2d21/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-be71a1e55c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/pi/work/ws_robu/install/wiimote:/home/pi/work/ws_robu/install/wiimote_msgs:/home/pi/work/ws_robu/install/turtlebot3:/home/pi/work/ws_robu/install/turtlebot3_teleop:/home/pi/work/ws_robu/install/turtlebot3_bringup:/home/pi/work/ws_robu/install/turtlebot3_node:/home/pi/work/ws_robu/install/turtlebot3_navigation2:/home/pi/work/ws_robu/install/turtlebot3_example:/home/pi/work/ws_robu/install/turtlebot3_msgs:/home/pi/work/ws_robu/install/turtlebot3_description:/home/pi/work/ws_robu/install/turtlebot3_cartographer:/home/pi/work/ws_robu/install/robocup:/home/pi/work/ws_robu/install/ld08_driver:/home/pi/work/ws_robu/install/hls_lfcd_lds_driver:/home/pi/work/ws_robu/install/dynamixel_sdk_examples:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces:/home/pi/work/ws_robu/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/pi/work/maze_bot/programming/mbot_ws/build/mazebot_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.190.128 52092 192.168.190.180 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/work/ws_robu/install/wiimote_msgs/local/lib/python3.10/dist-packages:/home/pi/work/ws_robu/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/turtlebot3_example/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/pi/work/ws_robu/install/robocup/lib/python3.10/site-packages:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/work/ws_robu/install/wiimote:/home/pi/work/ws_robu/install/wiimote_msgs:/home/pi/work/ws_robu/install/turtlebot3:/home/pi/work/ws_robu/install/turtlebot3_bringup:/home/pi/work/ws_robu/install/turtlebot3_node:/home/pi/work/ws_robu/install/turtlebot3_navigation2:/home/pi/work/ws_robu/install/turtlebot3_msgs:/home/pi/work/ws_robu/install/turtlebot3_description:/home/pi/work/ws_robu/install/turtlebot3_cartographer:/home/pi/work/ws_robu/install/ld08_driver:/home/pi/work/ws_robu/install/hls_lfcd_lds_driver:/home/pi/work/ws_robu/install/dynamixel_sdk_examples:/home/pi/work/ws_robu/install/dynamixel_sdk_custom_interfaces:/home/pi/work/ws_robu/install/dynamixel_sdk:/home/pi/work/ws_robu/install/turtlebot3_teleop:/home/pi/work/ws_robu/install/turtlebot3_example:/home/pi/work/ws_robu/install/robocup:/opt/ros/humble')]), 'shell': False}
+[37.402365] (mazebot_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[37.403461] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/ament_index/resource_index/rosidl_interfaces/mazebot_msgs\n'}
+[37.404840] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs\n'}
+[37.405635] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg\n'}
+[37.406355] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/mazebot_field_orientation.h\n'}
+[37.408768] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[37.409968] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/mazebot_neighboring_fields_wall_detection.h\n'}
+[37.411387] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/lidar_scan_processed.h\n'}
+[37.412434] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail\n'}
+[37.413319] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__struct.h\n'}
+[37.414583] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__functions.c\n'}
+[37.415956] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support.h\n'}
+[37.417139] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__functions.c\n'}
+[37.418599] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__functions.c\n'}
+[37.419966] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__functions.h\n'}
+[37.420335] (-) TimerEvent: {}
+[37.421374] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__functions.h\n'}
+[37.422750] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__functions.h\n'}
+[37.424245] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__struct.h\n'}
+[37.425532] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support.h\n'}
+[37.426854] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__type_support.h\n'}
+[37.428164] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__struct.h\n'}
+[37.429947] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/library_path.sh\n'}
+[37.431164] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/library_path.dsv\n'}
+[37.432726] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_generator_c.so\n'}
+[37.435402] (mazebot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_generator_c.so" to ""\n'}
+[37.435929] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs\n'}
+[37.436318] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg\n'}
+[37.436702] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[37.437857] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail\n'}
+[37.438411] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__rosidl_typesupport_fastrtps_c.h\n'}
+[37.439804] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__rosidl_typesupport_fastrtps_c.h\n'}
+[37.441156] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__rosidl_typesupport_fastrtps_c.h\n'}
+[37.442752] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[37.445608] (mazebot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[37.446102] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs\n'}
+[37.446452] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg\n'}
+[37.446835] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/mazebot_field_orientation.hpp\n'}
+[37.447979] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail\n'}
+[37.448515] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__builder.hpp\n'}
+[37.449782] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__traits.hpp\n'}
+[37.451065] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__builder.hpp\n'}
+[37.452318] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__builder.hpp\n'}
+[37.453529] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__struct.hpp\n'}
+[37.454859] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__traits.hpp\n'}
+[37.456153] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__traits.hpp\n'}
+[37.457484] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__struct.hpp\n'}
+[37.458736] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__struct.hpp\n'}
+[37.460123] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/lidar_scan_processed.hpp\n'}
+[37.461254] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/mazebot_neighboring_fields_wall_detection.hpp\n'}
+[37.462518] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs\n'}
+[37.462996] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg\n'}
+[37.463428] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[37.464626] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail\n'}
+[37.465191] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[37.466597] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[37.468109] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[37.469286] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/dds_fastrtps\n'}
+[37.470387] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[37.473197] (mazebot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[37.473691] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs\n'}
+[37.474115] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg\n'}
+[37.474459] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[37.475775] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail\n'}
+[37.476326] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__rosidl_typesupport_introspection_c.h\n'}
+[37.477677] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support.c\n'}
+[37.479122] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__rosidl_typesupport_introspection_c.h\n'}
+[37.480489] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__rosidl_typesupport_introspection_c.h\n'}
+[37.481749] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__type_support.c\n'}
+[37.483073] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support.c\n'}
+[37.484810] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_introspection_c.so\n'}
+[37.487491] (mazebot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[37.488022] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_c.so\n'}
+[37.490286] (mazebot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_c.so" to ""\n'}
+[37.490755] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs\n'}
+[37.491195] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg\n'}
+[37.491576] (mazebot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail\n'}
+[37.491946] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[37.493467] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_neighboring_fields_wall_detection__type_support.cpp\n'}
+[37.494882] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__type_support.cpp\n'}
+[37.496243] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__type_support.cpp\n'}
+[37.497608] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/mazebot_field_orientation__rosidl_typesupport_introspection_cpp.hpp\n'}
+[37.499035] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/include/mazebot_msgs/mazebot_msgs/msg/detail/lidar_scan_processed__rosidl_typesupport_introspection_cpp.hpp\n'}
+[37.500614] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[37.503561] (mazebot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[37.504057] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_cpp.so\n'}
+[37.506402] (mazebot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[37.506845] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/pythonpath.sh\n'}
+[37.508133] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/pythonpath.dsv\n'}
+[37.509308] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs-1.0.0-py3.10.egg-info\n'}
+[37.510358] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[37.511618] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[37.512776] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[37.513933] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[37.515289] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs\n'}
+[37.516138] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/_mazebot_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[37.517589] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[37.519007] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg\n'}
+[37.519981] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_mazebot_neighboring_fields_wall_detection.py\n'}
+[37.520439] (-) TimerEvent: {}
+[37.521535] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_mazebot_field_orientation_s.c\n'}
+[37.522979] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/__init__.py\n'}
+[37.524273] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_lidar_scan_processed_s.c\n'}
+[37.525553] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_mazebot_neighboring_fields_wall_detection_s.c\n'}
+[37.526947] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_mazebot_field_orientation.py\n'}
+[37.528306] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_lidar_scan_processed.py\n'}
+[37.529573] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/_mazebot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[37.530886] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/__init__.py\n'}
+[37.531992] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[37.533457] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/libmazebot_msgs__rosidl_generator_py.so\n'}
+[37.534882] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/_mazebot_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[37.536437] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[37.620623] (-) TimerEvent: {}
+[37.721294] (-) TimerEvent: {}
+[37.734125] (mazebot_msgs) StdoutLine: {'line': b"Listing '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs'...\n"}
+[37.735567] (mazebot_msgs) StdoutLine: {'line': b"Compiling '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/__init__.py'...\n"}
+[37.736566] (mazebot_msgs) StdoutLine: {'line': b"Listing '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg'...\n"}
+[37.737524] (mazebot_msgs) StdoutLine: {'line': b"Compiling '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/__init__.py'...\n"}
+[37.738463] (mazebot_msgs) StdoutLine: {'line': b"Compiling '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_lidar_scan_processed.py'...\n"}
+[37.739618] (mazebot_msgs) StdoutLine: {'line': b"Compiling '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_mazebot_field_orientation.py'...\n"}
+[37.740424] (mazebot_msgs) StdoutLine: {'line': b"Compiling '/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/msg/_mazebot_neighboring_fields_wall_detection.py'...\n"}
+[37.760174] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[37.762941] (mazebot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[37.764430] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[37.767428] (mazebot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[37.768871] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[37.771627] (mazebot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/local/lib/python3.10/dist-packages/mazebot_msgs/mazebot_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[37.772250] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_generator_py.so\n'}
+[37.774866] (mazebot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/lib/libmazebot_msgs__rosidl_generator_py.so" to ""\n'}
+[37.775617] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/LidarScanProcessed.idl\n'}
+[37.776924] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/MazebotFieldOrientation.idl\n'}
+[37.778250] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/MazebotNeighboringFieldsWallDetection.idl\n'}
+[37.779519] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/LidarScanProcessed.msg\n'}
+[37.780670] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/MazebotFieldOrientation.msg\n'}
+[37.781898] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/msg/MazebotNeighboringFieldsWallDetection.msg\n'}
+[37.783658] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/ament_index/resource_index/package_run_dependencies/mazebot_msgs\n'}
+[37.785388] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/ament_index/resource_index/parent_prefix_path/mazebot_msgs\n'}
+[37.786742] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/ament_prefix_path.sh\n'}
+[37.788039] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/ament_prefix_path.dsv\n'}
+[37.789313] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/path.sh\n'}
+[37.790462] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/environment/path.dsv\n'}
+[37.791815] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/local_setup.bash\n'}
+[37.793015] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/local_setup.sh\n'}
+[37.794236] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/local_setup.zsh\n'}
+[37.795458] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/local_setup.dsv\n'}
+[37.796678] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.dsv\n'}
+[37.798172] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/ament_index/resource_index/packages/mazebot_msgs\n'}
+[37.799930] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_generator_cExport.cmake\n'}
+[37.801330] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[37.802876] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[37.804402] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[37.805956] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_generator_cppExport.cmake\n'}
+[37.807564] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[37.809057] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[37.810615] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[37.812101] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[37.813611] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_cExport.cmake\n'}
+[37.815065] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[37.816862] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[37.818335] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[37.819922] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[37.821386] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[37.821770] (-) TimerEvent: {}
+[37.823126] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_generator_pyExport.cmake\n'}
+[37.824757] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/export_mazebot_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[37.826281] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[37.827590] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[37.829197] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[37.830612] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[37.832397] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[37.833684] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[37.835080] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[37.836408] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgsConfig.cmake\n'}
+[37.837445] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/cmake/mazebot_msgsConfig-version.cmake\n'}
+[37.838998] (mazebot_msgs) StdoutLine: {'line': b'-- Installing: /home/pi/work/maze_bot/programming/mbot_ws/install/mazebot_msgs/share/mazebot_msgs/package.xml\n'}
+[37.845992] (mazebot_msgs) CommandEnded: {'returncode': 0}
+[37.922044] (-) TimerEvent: {}
+[38.022789] (-) TimerEvent: {}
+[38.123511] (-) TimerEvent: {}
+[38.224659] (-) TimerEvent: {}
+[38.325391] (-) TimerEvent: {}
+[38.426048] (-) TimerEvent: {}
+[38.526816] (-) TimerEvent: {}
+[38.632655] (-) TimerEvent: {}
+[38.693004] (mazebot_msgs) JobEnded: {'identifier': 'mazebot_msgs', 'rc': 0}
+[38.696082] (-) EventReactorShutdown: {}

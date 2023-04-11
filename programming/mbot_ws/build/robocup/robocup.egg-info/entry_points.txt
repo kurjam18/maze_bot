@@ -1,0 +1,5 @@
+[console_scripts]
+remote = robocup.remotecontroll_mazebot:main
+serial = robocup.ros2_serial_mazebot:main
+wall_det = robocup.mazebot_wall_detection:main
+
