@@ -1,6 +1,0 @@
-msg/LidarScanProcessed.idl
-msg/LidarScanProcessed.msg
-msg/MazebotFieldOrientation.idl
-msg/MazebotFieldOrientation.msg
-msg/MazebotNeighboringFieldsWallDetection.idl
-msg/MazebotNeighboringFieldsWallDetection.msg
