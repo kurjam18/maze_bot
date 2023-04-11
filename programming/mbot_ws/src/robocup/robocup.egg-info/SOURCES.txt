@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+resource/robocup
+robocup/__init__.py
+robocup/serialmazebot.py
+robocup.egg-info/PKG-INFO
+robocup.egg-info/SOURCES.txt
+robocup.egg-info/dependency_links.txt
+robocup.egg-info/entry_points.txt
+robocup.egg-info/requires.txt
+robocup.egg-info/top_level.txt
+robocup.egg-info/zip-safe
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
