@@ -1,4 +1,0 @@
-[console_scripts]
-openMV = publisher.openmv_cam_pub.py:main
-rc_sensor = publisher.rc_sensor_pub.py:main
-

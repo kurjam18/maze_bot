@@ -1,1 +1,0 @@
-/home/kurzmann/mbot_ws/src/mazebot_v1/setup.py

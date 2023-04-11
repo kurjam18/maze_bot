@@ -1,8 +1,0 @@
-{
-  "package_name": "mazebot_msgs",
-  "non_idl_tuples": [
-    "/home/pi/work/maze_bot/programming/mbot_ws/src/mazebot_msgs:msg/LidarScanProcessed.msg",
-    "/home/pi/work/maze_bot/programming/mbot_ws/src/mazebot_msgs:msg/MazebotFieldOrientation.msg",
-    "/home/pi/work/maze_bot/programming/mbot_ws/src/mazebot_msgs:msg/MazebotNeighboringFieldsWallDetection.msg"
-  ]
-}

@@ -1,1 +1,0 @@
-/home/kurzmann/mbot_ws/src/publisher/setup.py

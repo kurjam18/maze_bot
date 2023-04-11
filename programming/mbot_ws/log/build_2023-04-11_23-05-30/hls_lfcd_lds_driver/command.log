@@ -1,2 +1,0 @@
-Invoking command in '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver -- -j4 -l4
-Invoked command in '/home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/work/maze_bot/programming/mbot_ws/build/hls_lfcd_lds_driver -- -j4 -l4
