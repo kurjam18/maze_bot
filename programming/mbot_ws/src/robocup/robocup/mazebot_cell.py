@@ -6,7 +6,7 @@ from rclpy.qos import QoSProfile
 from enum import IntEnum
 
 from geometry_msgs.msg import Twist
-from sensor_msgs.msg import Int32, LaserScan
+from std_msgs.msg import Int32
 from mazebot_msgs.msg import MazebotFieldOrientation
 from mazebot_msgs.msg import MazebotNeighboringFieldsWallDetection
 
@@ -308,15 +308,13 @@ class MazebotMap:
 
 class MazeBotNavigation(Node, MazebotMap):
     def __init__(self):
-        Node.__init__('MazeBotWallDetection')
-        MazebotMap.__init__(30, 30)
+        Node.__init__(self,'navigation')
+        MazebotMap.__init__(self, 30, 30)
         
         self.msg_wall_orientation = None
         self.msg_wall_detetion = None
         self.navigation_enabled = False
-
-
-        self.timer_nav = self.create_timer(1.0, self.timer_nav_callback)
+        self.nav_busy = False
 
 
         self.sub_mb_orientation = self.create_subscription(
@@ -336,6 +334,7 @@ class MazeBotNavigation(Node, MazebotMap):
             self.listener_callback_navigation_start,10)
         
         self.pub_cmd_vel = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.timer_nav = self.create_timer(1.0, self.timer_nav_callback)
 
 
     def timer_nav_callback(self):

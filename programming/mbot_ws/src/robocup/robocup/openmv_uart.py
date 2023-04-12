@@ -13,7 +13,7 @@ class OpenMVUart(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
         
-        self.serial = serial.Serial('/dev/serial0', 9600) # Öffnen Sie die UART-Verbindung
+        self.serial = serial.Serial('/dev/ttyACM1', 9600) # Öffnen Sie die UART-Verbindung
 
     def __del__(self):
         self.serial.close() # Schließen Sie die UART-Verbindung
