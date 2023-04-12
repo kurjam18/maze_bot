@@ -26,6 +26,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/LidarScanProcessed.msg"
   "msg/MazebotFieldOrientation.msg"
   "msg/MazebotNeighboringFieldsWallDetection.msg"
+  "msg/VictimDetected.msg"
+  "msg/Dropper.msg"
   DEPENDENCIES std_msgs
   DEPENDENCIES sensor_msgs  
 )
