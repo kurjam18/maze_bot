@@ -2,6 +2,7 @@ import rclpy
 from geometry_msgs.msg import Twist
 from rclpy.node import Node
 from std_msgs.msg import String
+from std_msgs.msg import Int32
 import serial
 
 
@@ -36,33 +37,35 @@ class SerialMazebot:
 
 
 class Ros2SerialMazeBot(Node):
-
     def __init__(self):
         super().__init__('ros2_serial_mazebot')
-        self.subscription = self.create_subscription(
+        self.subscription_cmd_vel = self.create_subscription(
             Twist,
             '/cmd_vel',
-            self.listener_callback,
+            self.listener_callback_cmd_vel,
             10)
-        self.serial_mazebot = SerialMazebot()
+        self.subscription_dropper = self.create_subscription(
+            Int32,
+            '/dropper',
+            self.listener_callback_dropper,
+            10)
+        self.serial = SerialMazebot()
 
-    def listener_callback(self, msg):
-        self.serial_mazebot.send_Linear(msg.linear.x)
-        self.serial_mazebot.send_Angular(msg.angular.z)
+    def listener_callback_cmd_vel(self, msg):
+        self.serial.send_Linear(msg.linear.x)
+        self.serial.send_Angular(msg.angular.z)
         self.get_logger().info('Linear velocity: %f, Angular velocity: %f' % (msg.linear.x, msg.angular.z))
 
+    def listener_callback_dropper(self, msg):
+        self.serial.dropKits(msg.data)
+        self.get_logger().info('Dropping %d kits' % msg.data)
 
 def main(args=None):
     rclpy.init(args=args)
-
     ros2_serial_mazebot = Ros2SerialMazeBot()
-
     rclpy.spin(ros2_serial_mazebot)
     ros2_serial_mazebot.destroy_node()
     rclpy.shutdown()
 
-
 if __name__ == '__main__':
     main()
-
-
