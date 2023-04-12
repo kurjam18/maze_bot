@@ -317,8 +317,8 @@ class MazeBotWallDetection(Node):
         print("right_index: ", right_index)
 
 
-        mazebot_field_orientation.front_distance = self.get_distance(msg.ranges, front_index)
-        mazebot_field_orientation.rear_distance = self.get_distance(msg.ranges, rear_index)
+        mazebot_field_orientation.front_distance = self.get_distance(msg.ranges, rear_index)
+        mazebot_field_orientation.rear_distance = self.get_distance(msg.ranges, front_index)
         mazebot_field_orientation.left_distance = self.get_distance(msg.ranges, left_index)
         mazebot_field_orientation.right_distance = self.get_distance(msg.ranges, right_index)     
 
@@ -337,8 +337,8 @@ class MazeBotWallDetection(Node):
         mazebot_wall_detection = MazebotNeighboringFieldsWallDetection()
         wall_detection = self.detect_neighbour_walls(msg)
 
-        mazebot_wall_detection.front = wall_detection[1]
-        mazebot_wall_detection.rear = wall_detection[0]
+        mazebot_wall_detection.front = wall_detection[0]
+        mazebot_wall_detection.rear = wall_detection[1]
         mazebot_wall_detection.left = wall_detection[2]
         mazebot_wall_detection.right = wall_detection[3]
 

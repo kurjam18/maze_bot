@@ -11,6 +11,7 @@ from mazebot_msgs.msg import MazebotFieldOrientation
 from mazebot_msgs.msg import MazebotNeighboringFieldsWallDetection
 
 import time
+import math
 
 class WallMarker(IntEnum):
     MARKER_NONE = 0
@@ -312,9 +313,10 @@ class MazeBotNavigation(Node, MazebotMap):
         MazebotMap.__init__(self, 30, 30)
         
         self.msg_wall_orientation = None
-        self.msg_wall_detetion = None
-        self.navigation_enabled = False
+        self.msg_wall_detection = None
+        self.navigation_enabled = True
         self.nav_busy = False
+        print("Initialisiert")
 
 
         self.sub_mb_orientation = self.create_subscription(
@@ -342,8 +344,10 @@ class MazeBotNavigation(Node, MazebotMap):
             self.navigate()
 
     def navigate(self):
+        
         self.nav_busy = True
-        if (self.msg_wall_detetion is not None and self.msg_wall_detetion is not None):
+        if (self.msg_wall_detection is not None and self.msg_wall_orientation is not None):
+            print("test")
             if (self.navigation_enabled):
                 self.alignRobotToCell()
                 self.moveRobotToNextCell()
@@ -360,9 +364,11 @@ class MazeBotNavigation(Node, MazebotMap):
 
 
     def listener_callback_orientation(self, msg):
+        print("orientation")
         self.msg_wall_orientation = msg
 
     def listener_callback_wall_detetion(self, msg):
+        print("detection")
         self.msg_wall_detection = msg
 
     def listener_callback_navigation_start(self, msg):
@@ -380,44 +386,44 @@ class MazeBotNavigation(Node, MazebotMap):
         vel.angular.z = 0.0
         if (dis_misaligned > 0.02):
             t = vel.linear.x / dis_misaligned
-            self.pub_cmd_vel(vel)
+            self.pub_cmd_vel.publish(vel)
             time.sleep(t)
             vel.linear.x = 0.0
-            self.pub_cmd_vel(vel)
-        elif (dis_misaligned < 0.02):
-            t =  vel.linear.x / -dis_misaligned
+            self.pub_cmd_vel.publish(vel)
+        elif (dis_misaligned < - 0.02):
+            t =  vel.linear.x / - dis_misaligned
             vel.linear.x = - vel.linear.x
-            self.pub_cmd_vel(vel)
+            self.pub_cmd_vel.publish(vel)
             time.sleep(t)
             vel.linear.x = 0.0
-            self.pub_cmd_vel(vel)
+            self.pub_cmd_vel.publish(vel)
 
         angular = 0.0
         if (self.msg_wall_orientation.left_distance < 0):
             angular = self.msg_wall_orientation.right_angle_deg
-        elif (self.msg_wall_orientation.rigth_distance < 0):
+        elif (self.msg_wall_orientation.right_distance < 0):
             angular = self.msg_wall_orientation.left_angle_deg
         elif (self.msg_wall_orientation.left_distance < self.msg_wall_orientation.right_distance):
             angular = self.msg_wall_orientation.left_angle_deg
         else:
-            angular = self.msg_wall_orientation.righ_angle_deg
+            angular = self.msg_wall_orientation.right_angle_deg
         
 
         vel.linear.x = 0.0
         vel.angular.z = 1.0 #rad/s
-        if (angular > 3):
+        if (angular > (3* math.pi/180 )):
             t = vel.angular.z / angular
-            self.pub_cmd_vel(vel)
+            self.pub_cmd_vel.publish(vel)
             time.sleep(t)
             vel.angular.z = 0.0
-            self.pub_cmd_vel(vel)
-        elif (angular < 3):
+            self.pub_cmd_vel.publish(vel)
+        elif (angular < - (3* math.pi/180 )):
             t = vel.angular.z / -angular
             vel.angular.z = - vel.angular.z 
-            self.pub_cmd_vel(vel)
+            self.pub_cmd_vel.publish(vel)
             time.sleep(t)
             vel.angular.z = 0.0
-            self.pub_cmd_vel(vel)
+            self.pub_cmd_vel.publish(vel)
 
     def moveRobotToNextCell(self):
         pass
