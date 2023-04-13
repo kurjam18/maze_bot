@@ -27,7 +27,7 @@ setup(
             'remote = robocup.remotecontroll_mazebot:main', 
             'wall_det = robocup.mazebot_wall_detection:main',
             'openmv = robocup.openmv_uart:main ',
-            'navigation = robocup.mazebot_cell:main',
+            'navigation = robocup.navigation:main',
         ],
     },
 )
