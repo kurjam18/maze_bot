@@ -328,12 +328,12 @@ class MazeBotNavigation(Node, MazebotMap):
         self.sub_mb_wall_detection = self.create_subscription(
             MazebotNeighboringFieldsWallDetection,
             "/mazebot_wall_detection/detection",
-            self.listener_callback_wall_detetion,10)
+            self.listener_callback_wall_detetion,5)
         
         self.sub_mb_nav_start = self.create_subscription(
             Int32,
             "/navigation/start",
-            self.listener_callback_navigation_start,10)
+            self.listener_callback_navigation_start,5)
         
         self.pub_cmd_vel = self.create_publisher(Twist, 'cmd_vel', 10)
         self.timer_nav = self.create_timer(1.0, self.timer_nav_callback)
@@ -382,48 +382,56 @@ class MazeBotNavigation(Node, MazebotMap):
         # float32 right_angle_deg        # [grad]
         dis_misaligned = (self.msg_wall_orientation.front_distance % self.map_cell_length) - (self.map_cell_length/2.0)
         vel = Twist()
+        print(dis_misaligned, self.msg_wall_orientation.front_distance,self.map_cell_length/2.0)
         vel.linear.x = 0.15
         vel.angular.z = 0.0
         if (dis_misaligned > 0.02):
             t = vel.linear.x / dis_misaligned
             self.pub_cmd_vel.publish(vel)
-            time.sleep(t)
-            vel.linear.x = 0.0
-            self.pub_cmd_vel.publish(vel)
-        elif (dis_misaligned < - 0.02):
+            # time.sleep(t)
+            # print(t)
+            #vel.linear.x = 0.0
+            #self.pub_cmd_vel.publish(vel)
+        elif (dis_misaligned < -0.02):
             t =  vel.linear.x / - dis_misaligned
             vel.linear.x = - vel.linear.x
             self.pub_cmd_vel.publish(vel)
-            time.sleep(t)
+            # time.sleep(t)
+            # vel.linear.x = 0.0
+            #self.pub_cmd_vel.publish(vel)
+        else:
             vel.linear.x = 0.0
             self.pub_cmd_vel.publish(vel)
 
-        angular = 0.0
-        if (self.msg_wall_orientation.left_distance < 0):
-            angular = self.msg_wall_orientation.right_angle_deg
-        elif (self.msg_wall_orientation.right_distance < 0):
-            angular = self.msg_wall_orientation.left_angle_deg
-        elif (self.msg_wall_orientation.left_distance < self.msg_wall_orientation.right_distance):
-            angular = self.msg_wall_orientation.left_angle_deg
-        else:
-            angular = self.msg_wall_orientation.right_angle_deg
-        
+            angular = 0.0
+            if (self.msg_wall_orientation.left_distance < 0):
+                angular = self.msg_wall_orientation.right_angle_deg
+            elif (self.msg_wall_orientation.right_distance < 0):
+                angular = self.msg_wall_orientation.left_angle_deg
+            elif (self.msg_wall_orientation.left_distance < self.msg_wall_orientation.right_distance):
+                angular = self.msg_wall_orientation.left_angle_deg
+            else:
+                angular = self.msg_wall_orientation.right_angle_deg
+            
 
-        vel.linear.x = 0.0
-        vel.angular.z = 1.0 #rad/s
-        if (angular > (3* math.pi/180 )):
-            t = vel.angular.z / angular
-            self.pub_cmd_vel.publish(vel)
-            time.sleep(t)
-            vel.angular.z = 0.0
-            self.pub_cmd_vel.publish(vel)
-        elif (angular < - (3* math.pi/180 )):
-            t = vel.angular.z / -angular
-            vel.angular.z = - vel.angular.z 
-            self.pub_cmd_vel.publish(vel)
-            time.sleep(t)
-            vel.angular.z = 0.0
-            self.pub_cmd_vel.publish(vel)
+            vel.linear.x = 0.0
+            vel.angular.z = 0.2 #rad/s
+            if (angular > (3* math.pi/180 )):
+                t = vel.angular.z / angular
+                self.pub_cmd_vel.publish(vel)
+                # time.sleep(t)
+                # vel.angular.z = 0.0
+                # self.pub_cmd_vel.publish(vel)
+            elif (angular < - (3* math.pi/180 )):
+                t = vel.angular.z / -angular
+                vel.angular.z = - vel.angular.z 
+                self.pub_cmd_vel.publish(vel)
+                # time.sleep(t)
+                # vel.angular.z = 0.0
+                # self.pub_cmd_vel.publish(vel)
+            else:
+                vel.angular.z = 0.0
+                self.pub_cmd_vel.publish(vel)
 
     def moveRobotToNextCell(self):
         pass

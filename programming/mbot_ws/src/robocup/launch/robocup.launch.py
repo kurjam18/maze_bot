@@ -26,6 +26,11 @@ def generate_launch_description():
         executable="serial",
     )
 
+    navigation = Node(
+        package="robocup",
+        executable="navigation",
+    )
+
     lidar = Node(
         package='hls_lfcd_lds_driver',
         executable='hlds_laser_publisher',
@@ -37,6 +42,7 @@ def generate_launch_description():
     # Launch them all!
     return LaunchDescription([
         mazebot_serial,
+        navigation, 
         wall_detection,
         lidar, 
     ])

@@ -36,10 +36,10 @@ class DisplayMazeBot(Node):
         
         vel = Twist()
         
-        if msg.rear_distance > 0.3:
+        if msg.front_distance > 0.3:
             vel.linear.x = -0.15
             self.pub_cmd_vel.publish(vel)
-        elif msg.rear_distance < 0.17:
+        elif msg.front_distance < 0.17:
             vel.linear.x = 0.0
             self.pub_cmd_vel.publish(vel)
 
