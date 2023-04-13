@@ -4,6 +4,7 @@ from rclpy.node import Node
 from mazebot_msgs.msg import VictimDetected
 from mazebot_msgs.msg import Dropper
 from std_msgs.msg import Int32
+from std_msgs.msg import Float32
 from mazebot_msgs.msg import MazebotFieldOrientation
 from mazebot_msgs.msg import MazebotNeighboringFieldsWallDetection
 
@@ -14,6 +15,7 @@ class DisplayMazeBot(Node):
         self.publisher_dropper = self.create_publisher(Dropper, 'dropper', 10)
         self.publisher_start = self.create_publisher(Int32, '/naviagtion/start', 10)
         self.publisher_restart = self.create_publisher(Int32, '/naviagtion/restart', 10)
+        self.cnt = 0
 
        # self.sub_mb_wall_detection = self.create_subscription(MazebotNeighboringFieldsWallDetection,
        #                                                        "/mazebot_wall_detection/detection",  self.listener_callback_wall_detetion,10)
@@ -24,7 +26,8 @@ class DisplayMazeBot(Node):
             self.listener_callback_orientation,
             10)
         
-        self.pub_cmd_vel = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.pub_cmd_vel = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.pub_turn = self.create_publisher(Float32, '/turn', 10)
 
     # def listener_callback_wall_detetion(self, msg):
     #     if msg.front_distance > 0.3:
@@ -37,11 +40,18 @@ class DisplayMazeBot(Node):
         vel = Twist()
         
         if msg.front_distance > 0.3:
-            vel.linear.x = -0.15
+            vel.linear.x = 0.10
             self.pub_cmd_vel.publish(vel)
-        elif msg.front_distance < 0.17:
+            self.cnt = 0
+        elif msg.front_distance <= 0.25:
             vel.linear.x = 0.0
             self.pub_cmd_vel.publish(vel)
+            if msg.left_distance > 0.3 and self.cnt == 0:
+                self.pub_turn.publish(Float32(data = 1.57))
+                self.cnt = 1
+            elif msg.right_distance > 0.3:
+                self.pub_turn.publish(Float32(data = -1.57))
+
 
 
     def subscription_color_callback(self, msg):

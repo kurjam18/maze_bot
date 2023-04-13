@@ -21,6 +21,11 @@ def generate_launch_description():
         executable="wall_det",
     )
 
+    detection = Node(
+        package="robocup",
+        executable="detection",
+    )
+
     mazebot_serial = Node(
         package="robocup",
         executable="serial",

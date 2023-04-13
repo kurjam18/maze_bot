@@ -10,48 +10,69 @@ import serial
 
 
 class SerialDisplayMazebot:
-        def __init__(self, baudrate = 9600, port = '/dev/ttyACM0', tout = 0.1):
-            self.baudrate = baudrate
-            self.port = port
-            self.serial = serial.Serial(self.port, baudrate, timeout=tout)
+    def __init__(self, baudrate=9600, port='/dev/ttyACM0', tout=1.0):
+        self.baudrate = baudrate
+        self.port = port
+        self.serial = serial.Serial(self.port, baudrate, timeout=tout)
 
-        def victim_found(self):
-            xmtMessage = "victim found"
-            self.serial.write(xmtMessage.encode('utf-8'))
-            
+    def victim_found(self):
+        xmtMessage = "victim found\n"
+        self.serial.write(xmtMessage.encode('utf-8'))
 
-        def blue_tile(self):
-            xmtMessage = "blue tile"
-            self.serial.write(xmtMessage.encode('utf-8'))
+    def blue_tile(self):
+        xmtMessage = "blue tile\n"
+        self.serial.write(xmtMessage.encode('utf-8'))
 
-        def end_run(self):
-            xmtMessage = "end"
-            self.serial.write(xmtMessage.encode('utf-8'))
+    def end_run(self):
+        xmtMessage = "end\n"
+        self.serial.write(xmtMessage.encode('utf-8'))
 
-        def check_start_button(self) -> bool:
-            returnmessage = self.serial.readline()
+    def check_start_button(self) -> bool:
+        
+        if self.serial.in_waiting > 0:
+            returnmessage = self.serial.readline().decode('utf-8').strip()
             if returnmessage == "Start pressed":
+                print(returnmessage)
                 return True
             else:
                 return False
+        else:
+            return False
 
-        def check_restart_button(self) -> bool:
-            returnmessage = self.serial.readline()
+    def check_restart_button(self) -> bool:
+        
+        if self.serial.in_waiting > 0:
+            returnmessage = self.serial.readline().decode('utf-8').strip()
             if returnmessage == "Restart pressed":
+                print(returnmessage)
                 return True
             else:
                 return False
+        else:
+            return False
+
             
 class DisplayMazeBot(Node):
     def __init__(self):
         super().__init__('display_mazebot')
+        self.serial = SerialDisplayMazebot()
         self.publisher_dropper = self.create_publisher(Dropper, 'dropper', 10)
         self.publisher_start = self.create_publisher(Int32, '/naviagtion/start', 10)
         self.publisher_restart = self.create_publisher(Int32, '/naviagtion/restart', 10)
         self.subscription_ = self.create_subscription(VictimDetected, 'letters_detected', self.subscription_letter_callback, 10)
         self.subscription_color = self.create_subscription(VictimDetected, 'colors_detected', self.subscription_color_callback, 10)
-        self.buttons
-        self.serial = SerialDisplayMazebot()
+        self.serial.blue_tile()
+        timer_period = 1.0  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+
+    def timer_callback(self):
+        print("timer")
+        if self.serial.check_start_button():
+            self.publisher_start.publish(Int32(data=1))
+            print("Start gedrückt")
+        elif self.serial.check_restart_button():
+            self.publisher_restart.publish(Int32(data=1))
+            print("Stop gedrückt")
 
     def subscription_letter_callback(self, msg):
         self.get_logger().info('Letters detected: "%s"' % msg.victim_id)
@@ -70,12 +91,6 @@ class DisplayMazeBot(Node):
             self.publisher_dropper.publish(kits=1, location = msg.victim_location)
         elif msg.victim_id == 'GELB':
             self.publisher_dropper.publish(kits=1, location = msg.victim_location)
-
-    def buttons(self):
-        if self.serial.check_start_button:
-            self.publisher_start.publish(Int32(data=1))
-        elif self.serial.check_restart_button:
-            self.publisher_restart.publish(Int32(data=1))
 
 def main(args=None):
 

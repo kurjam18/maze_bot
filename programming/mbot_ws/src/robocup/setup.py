@@ -28,6 +28,7 @@ setup(
             'wall_det = robocup.mazebot_wall_detection:main',
             'openmv = robocup.openmv_uart:main ',
             'navigation = robocup.navigation:main',
+            'detection = robocup.detection:main',
         ],
     },
 )

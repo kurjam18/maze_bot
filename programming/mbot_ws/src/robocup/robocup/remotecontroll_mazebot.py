@@ -6,6 +6,8 @@ import select
 from geometry_msgs.msg import Twist
 from rclpy.qos import QoSProfile
 from std_msgs.msg import Int32
+from std_msgs.msg import Float32
+
 
 msg = """
 Excercise:  RemoteCtrl
@@ -43,6 +45,7 @@ def main():
     
     pub = node.create_publisher(Twist, 'cmd_vel', qos)
     pub_dropper = node.create_publisher(Int32, 'dropper', qos)
+    pub_turn = node.create_publisher(Float32, 'turn', 10)
     
     vel = Twist()
     try:
@@ -60,6 +63,10 @@ def main():
                 vel.angular.z = 0.0
                 pub.publish(vel)
             elif key == 't': #Key: m to stop the robot 
+                print("Drop")
+                kits = 1
+                pub_turn.publish(Float32(data=1.57))
+            elif key == 'o': #Key: m to stop the robot 
                 print("Drop")
                 kits = 1
                 pub_dropper.publish(Int32(data=kits))
