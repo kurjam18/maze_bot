@@ -154,6 +154,7 @@ class MazeBotWallDetection(Node):
         angle_min = msg.angle_min
         angle_increment = msg.angle_increment
 
+        current_wall_detection = [-1] * 4
         front_wall_detection = [-1] * 4     # [front, rear, left, right], -1... invalid, 0... no wall detected, 1... wall detected
         rear_wall_detection = [-1] * 4      # [front, rear, left, right], -1... invalid, 0... no wall detected, 1... wall detected
         left_wall_detection = [-1] * 4      # [front, rear, left, right], -1... invalid, 0... no wall detected, 1... wall detected
@@ -169,13 +170,42 @@ class MazeBotWallDetection(Node):
         front_wall_angle = 0 * (math.pi/180)
         rear_wall_angle = 0 * (math.pi/180)
 
+        #CURRENT-Cell
+        front_wall_index = 0
+        rear_wall_index = int(math.pi / msg.angle_increment)
+        right_wall_index = int(((math.pi / 180) * 270) / msg.angle_increment)
+        left_wall_index = int(((math.pi / 180) * 90) / msg.angle_increment)
 
-        # FRONT-Field
+        distance = self.get_distance(scan_range, front_wall_index)
+        if ( distance < (0.5 * self.field_length + front_epsilon) and distance > (0.5 * self.field_length - front_epsilon)):
+            current_wall_detection[0] = 1
+        else:
+            current_wall_detection[0] = 0
+
+        distance = self.get_distance(scan_range, rear_wall_index)
+        if ( distance < (0.5 * self.field_length + rear_epsilon) and distance > (0.5 * self.field_length - rear_epsilon)):
+            current_wall_detection[1] = 1
+        else:
+            current_wall_detection[1] = 0
+
+        distance = self.get_distance(scan_range, left_wall_index)
+        if ( distance < (0.5 * self.field_length + side_epsilon) and distance > (0.5 * self.field_length - side_epsilon)):
+            current_wall_detection[2] = 1
+        else:
+            current_wall_detection[2] = 0  
+
+        distance = self.get_distance(scan_range, right_wall_index)
+        if ( distance < (0.5 * self.field_length + side_epsilon) and distance > (0.5 * self.field_length - side_epsilon)):
+            current_wall_detection[3] = 1
+        else:
+            current_wall_detection[3] = 0
+
+        # FRONT-Cell
         left_wall_index = int(left_wall_angle / angle_increment)
         right_wall_index = len(scan_range) - int(left_wall_angle / angle_increment)
         front_wall_index = 0
         rear_wall_index = 0
-
+    
         distance = (self.get_distance(scan_range, front_wall_index) * math.cos(front_wall_angle))
         if ( distance < (0.5 * self.field_length + front_epsilon) and distance > (0.5 * self.field_length - front_epsilon)):
             front_wall_detection[0] = 1
@@ -201,7 +231,7 @@ class MazeBotWallDetection(Node):
                 front_wall_detection[3] = 0
 
 
-        # REAR-Field
+        # REAR-Cell
         left_wall_index = int((math.pi + left_wall_angle) / angle_increment)
         right_wall_index = int((math.pi - left_wall_angle) / angle_increment)
         front_wall_index = int((math.pi + front_wall_angle) / angle_increment)
@@ -231,7 +261,7 @@ class MazeBotWallDetection(Node):
             else:
                 rear_wall_detection[3] = 0
 
-        # LEFT-Field
+        # LEFT-Cell
         left_wall_index = int(((math.pi / 180) * 90 + left_wall_angle) / angle_increment)
         right_wall_index = int(((math.pi / 180) * 90 - left_wall_angle) / angle_increment)
         front_wall_index = int(((math.pi / 180) * 90 + front_wall_angle) / angle_increment)
@@ -262,7 +292,7 @@ class MazeBotWallDetection(Node):
                 left_wall_detection[3] = 0
             
 
-        # RIGHT-Field
+        # RIGHT-Cell
         left_wall_index = int(((math.pi / 180) * 270 + left_wall_angle) / angle_increment)
         right_wall_index = int(((math.pi / 180) * 270 - left_wall_angle) / angle_increment)
         front_wall_index = int(((math.pi / 180) * 270 + front_wall_angle) / angle_increment)
@@ -292,16 +322,14 @@ class MazeBotWallDetection(Node):
             else:
                 right_wall_detection[3] = 0
 
-        return (front_wall_detection, rear_wall_detection, left_wall_detection, right_wall_detection)
+        return (current_wall_detection, front_wall_detection, rear_wall_detection, left_wall_detection, right_wall_detection)
     
-
     def lidar_callback(self,msg):
 
         mazebot_field_orientation = MazebotFieldOrientation()
         mazebot_field_orientation.laser_scan = msg
         mazebot_field_orientation.header = msg.header
         
-
         front_index = 0
         rear_index = int(math.pi / msg.angle_increment)
         right_index = int(((math.pi / 180) * 270) / msg.angle_increment)
@@ -337,10 +365,11 @@ class MazeBotWallDetection(Node):
         mazebot_wall_detection = MazebotNeighboringFieldsWallDetection()
         wall_detection = self.detect_neighbour_walls(msg)
 
-        mazebot_wall_detection.front = wall_detection[0]
-        mazebot_wall_detection.rear = wall_detection[1]
-        mazebot_wall_detection.left = wall_detection[2]
-        mazebot_wall_detection.right = wall_detection[3]
+        mazebot_wall_detection.current = wall_detection[0]
+        mazebot_wall_detection.front = wall_detection[1]
+        mazebot_wall_detection.rear = wall_detection[2]
+        mazebot_wall_detection.left = wall_detection[3]
+        mazebot_wall_detection.right = wall_detection[4]
 
         print ("NEIGHBORING FIELDS:")
         print ("Front field walls: ", mazebot_wall_detection.front)
