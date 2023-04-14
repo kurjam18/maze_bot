@@ -4,6 +4,7 @@ from rclpy.node import Node
 from mazebot_msgs.msg import VictimDetected
 from mazebot_msgs.msg import Dropper
 from std_msgs.msg import Int32
+from std_msgs.msg import Bool
 import serial
 
 
@@ -57,8 +58,8 @@ class DisplayMazeBot(Node):
         super().__init__('display_mazebot')
         self.serial = SerialDisplayMazebot()
         self.publisher_dropper = self.create_publisher(Dropper, 'dropper', 10)
-        self.publisher_start = self.create_publisher(Int32, '/naviagtion/start', 10)
-        self.publisher_restart = self.create_publisher(Int32, '/naviagtion/restart', 10)
+        self.publisher_start = self.create_publisher(Bool, '/naviagtion/start', 10)
+        self.publisher_restart = self.create_publisher(Bool, '/naviagtion/restart', 10)
         self.subscription_ = self.create_subscription(VictimDetected, 'letters_detected', self.subscription_letter_callback, 10)
         self.subscription_color = self.create_subscription(VictimDetected, 'colors_detected', self.subscription_color_callback, 10)
         self.serial.blue_tile()
@@ -68,29 +69,23 @@ class DisplayMazeBot(Node):
     def timer_callback(self):
         print("timer")
         if self.serial.check_start_button():
-            self.publisher_start.publish(Int32(data=1))
+            self.publisher_start.publish(Bool(data=True))
             print("Start gedrückt")
         elif self.serial.check_restart_button():
-            self.publisher_restart.publish(Int32(data=1))
+            self.publisher_restart.publish(Bool(data=False))
             print("Stop gedrückt")
 
     def subscription_letter_callback(self, msg):
-        self.get_logger().info('Letters detected: "%s"' % msg.victim_id)
-        self.serial.victim_found()
-        if msg.victim_id == 'H':
+        if (msg.victim_id == 'H') or (msg.victim_id == 'S') or (msg.victim_id == 'U') :
             self.publisher_dropper.publish(kits=3, location = msg.victim_location)
-        elif msg.victim_id == 'S':
             self.publisher_dropper.publish(kits=1, location = msg.victim_location)
-            
-
+            self.get_logger().info('Letters detected: "%s"' % msg.victim_id)
+            self.serial.victim_found()
 
     def subscription_color_callback(self, msg):
+        
         self.get_logger().info('Color detected: "%s"' % msg.victim_id)
         self.serial.victim_found()
-        if msg.victim_id == 'ROT':
-            self.publisher_dropper.publish(kits=1, location = msg.victim_location)
-        elif msg.victim_id == 'GELB':
-            self.publisher_dropper.publish(kits=1, location = msg.victim_location)
 
 def main(args=None):
 

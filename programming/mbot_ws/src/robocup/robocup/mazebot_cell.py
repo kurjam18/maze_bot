@@ -7,8 +7,12 @@ from enum import IntEnum
 
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Int32
+from std_msgs.msg import Float32
+from std_msgs.msg import Bool
 from mazebot_msgs.msg import MazebotFieldOrientation
 from mazebot_msgs.msg import MazebotNeighboringFieldsWallDetection
+from mazebot_msgs.msg import VictimDetected
+from mazebot_msgs.msg import Dropper
 
 import time
 import math
@@ -22,6 +26,7 @@ class NavigationStates(IntEnum):
     NAV_STATE_HOMECOMING = 5
     NAV_STATE_TURN = 6
     NAV_STATE_MOVE = 7
+    NAV_STATE_ALIGMENT_A_TURN = 8
 
 class WallMarker(IntEnum):
     MARKER_NONE = 0
@@ -34,6 +39,7 @@ class WallMarker(IntEnum):
     MARKER_TEMP = 7
     MARKER_CHECKPOINT = 8
     MARKER_COLOR_BLACK = 9
+    MARKER_YELLOW_BLUE = 10
 
 class WallDefinition(IntEnum):
     WALL_UNKNOWN = -1
@@ -158,27 +164,27 @@ class MazebotMap:
         pos_y = pos[1]
 
         if robot_cell_orientation == RobotCellOrientation.CELL_NORTH:
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_NORTH] = front
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_SOUTH] = rear
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_EAST] = right
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_WEST] = left
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_NORTH] = front
+            self.map_cells[pos_x][ pos_y].wall[RobotCellOrientation.CELL_SOUTH] = rear
+            self.map_cells[pos_x][ pos_y].wall[RobotCellOrientation.CELL_EAST] = right
+            self.map_cells[pos_x][ pos_y].wall[RobotCellOrientation.CELL_WEST] = left
             
         elif robot_cell_orientation == RobotCellOrientation.CELL_EAST:
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_NORTH] = left
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_SOUTH] = right
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_EAST] = front
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_WEST] = rear
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_NORTH] = left
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_SOUTH] = right
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_EAST] = front
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_WEST] = rear
     
         elif robot_cell_orientation == RobotCellOrientation.CELL_SOUTH:
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_NORTH] = rear
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_SOUTH] = front
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_EAST] = left
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_WEST] = right
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_NORTH] = rear
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_SOUTH] = front
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_EAST] = left
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_WEST] = right
         else:
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_NORTH] = right
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_SOUTH] = left
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_EAST] = rear
-            self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_WEST] = front
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_NORTH] = right
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_SOUTH] = left
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_EAST] = rear
+            self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_WEST] = front
 
     def getWallsOfCurrentCell(self):
         pos, robot_cell_orientation = self.map_path[-1]
@@ -186,27 +192,27 @@ class MazebotMap:
         pos_y = pos[1]
 
         if robot_cell_orientation == RobotCellOrientation.CELL_NORTH:
-            front = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_NORTH]
-            rear = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_SOUTH]
-            right = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_EAST]
-            left = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_WEST]
+            front = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_NORTH]
+            rear = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_SOUTH]
+            right = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_EAST]
+            left = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_WEST]
             
         elif robot_cell_orientation == RobotCellOrientation.CELL_EAST:
-            left = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_NORTH]
-            right = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_SOUTH]
-            front = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_EAST]
-            rear = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_WEST]
+            left = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_NORTH]
+            right = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_SOUTH]
+            front = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_EAST]
+            rear = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_WEST]
     
         elif robot_cell_orientation == RobotCellOrientation.CELL_SOUTH:
-            rear = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_NORTH]
-            front = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_SOUTH]
-            left = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_EAST]
-            right = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_WEST]
+            rear = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_NORTH]
+            front = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_SOUTH]
+            left = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_EAST]
+            right = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_WEST]
         else:
-            right = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_NORTH]
-            left = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_SOUTH]
-            rear = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_EAST]
-            front = self.map_cells[pos_x, pos_y].walls[RobotCellOrientation.CELL_WEST]
+            right = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_NORTH]
+            left = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_SOUTH]
+            rear = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_EAST]
+            front = self.map_cells[pos_x][pos_y].wall[RobotCellOrientation.CELL_WEST]
 
         return (front, rear, left, right)
     
@@ -244,7 +250,7 @@ class MazebotMap:
                 orientation = RobotCellOrientation.CELL_EAST
 
         self.map_path[-1][1] = orientation
-
+    
     def setCurrentCellMarker(self, side=RobotDirectionDefinition.DIRECTION_INVALID, marker=WallMarker.MARKER_NONE):
         pos, robot_cell_orientation = self.map_path[-1]
         pos_x = pos[0]
@@ -361,18 +367,19 @@ class MazeBotNavigation(Node, MazebotMap):
         MazebotMap.__init__(self, 30, 30)
         
         self.map_cell_length = 0.3
-        self.lidar_cell_offset = (0.04, 0.0)
-        self.distance_max_epsilon = (0.02, 0.02)
-        self.tangent_max_epsilon = 3 * (math.pi/180.0)
+        self.lidar_cell_offset = (0.03, 0.0)
+        self.distance_max_epsilon = (0.03, 0.03)
+        self.tangent_max_epsilon = 5 * (math.pi/180.0)
 
-        self.vel_max_linear = 0.15
-        self.vel_max_angular = 30 * (math.pi/180.0)
+        self.vel_max_linear = 0.10
+        self.vel_max_angular = 20 * (math.pi/180.0)
 
-        self.timer_nav_interval = 0.1 #sec
+        self.timer_nav_interval = 2.0 #sec
         self.msg_wall_orientation = None
         self.msg_wall_detection = None
         self.navigation_enabled = True
         self.nav_busy = False
+        self.teensy_busy = False
         self.nav_state = NavigationStates.NAV_STATE_START
         self.move_direction = RobotDirectionDefinition.DIRECTION_INVALID
 
@@ -391,43 +398,63 @@ class MazeBotNavigation(Node, MazebotMap):
             self.listener_callback_wall_detetion,5)
         
         self.sub_mb_nav_start = self.create_subscription(
-            Int32,
-            "/navigation/start",
+            Bool,
+            "/naviagtion/start",
             self.listener_callback_navigation_start,5)
         
+        self.sub_isbusy = self.create_subscription(
+            Bool,
+            "/is_busy",
+            self.listener_callback_navigation_isbusy,5)
+        
         self.pub_cmd_vel = self.create_publisher(Twist, 'cmd_vel', 10)
+        self.pub_move = self.create_publisher(Float32, 'move', 10)
+        self.pub_turn = self.create_publisher(Float32, 'turn', 10)
         self.timer_nav = self.create_timer(self.timer_nav_interval, self.timer_nav_callback)
+
+        self.publisher_dropper = self.create_publisher(Dropper, 'dropper', 10)
+        self.subscription_ = self.create_subscription(VictimDetected, 'letters_detected', self.subscription_letter_callback, 10)
+        self.subscription_color = self.create_subscription(VictimDetected, 'colors_detected', self.subscription_color_callback, 10)
 
 
     def timer_nav_callback(self):
-        if self.nav_busy == False:
+        if (self.nav_busy == False) and (self.teensy_busy == False):
             self.navigate()
 
     def navigate(self):
-        self.nav_busy = True #TODO Busy vom Teensy!!
         if (self.msg_wall_detection is not None and self.msg_wall_orientation is not None):
             if (self.navigation_enabled):
                 
                 if (self.nav_state == NavigationStates.NAV_STATE_START):
                     self.nav_state = NavigationStates.NAV_STATE_ALIGMENT
+                    print("Start")
 
                 elif (self.nav_state == NavigationStates.NAV_STATE_ALIGMENT):
+                    print("Alligment")
                     if self.alignRobotToCell() == True:
-                        self.nav_state == NavigationStates.NAV_STATE_MARKERDETECTION
+                        self.nav_state = NavigationStates.NAV_STATE_MARKERDETECTION
+                        
 
                 elif (self.nav_state == NavigationStates.NAV_STATE_MARKERDETECTION):
+                    print("NAV_STATE_MARKERDETECTION")
+                    self.nav_state = NavigationStates.NAV_STATE_WALLDETECTION
 
-                    self.nav_state == NavigationStates.NAV_STATE_WALLDETECTION
+                    #TODO: elf.setCurrentCellMarker(side = RobotDirectionDefinition.DIRECTION_FRONT, marker = WallMarker.MARKER_YELLOW_BLUE)
+                    #TODO: Roboer zurück fahren (auf Karte) und neu ausrichten bei schwarzem Feld!!
+                    #TODO: Rechte am I2C-Bus einstellen!
                     # t = time.process_time()
-                    # #do some stuff
+                    # #do some stuffls -l /dev/i2c-1
                     # elapsed_time = time.process_time() - t
 
                 elif (self.nav_state == NavigationStates.NAV_STATE_WALLDETECTION):
+                    print("NAV_STATE_WALLDETECTION")
                     self.saveCurrentCellWallsToMap()
-                    self.nav_state == NavigationStates.NAV_STATE_MOVETONEXTCELL
+                    self.nav_state = NavigationStates.NAV_STATE_MOVETONEXTCELL
 
                 elif (self.nav_state == NavigationStates.NAV_STATE_MOVETONEXTCELL):
+                    print("NAV_STATE_MOVETONEXTCELL")
                     self.move_direction = self.moveRobotToNextCell()
+                    print(self.move_direction)
 
                     if (self.move_direction == RobotDirectionDefinition.DIRECTION_FRONT):
                         self.nav_state = NavigationStates.NAV_STATE_MOVE
@@ -435,16 +462,35 @@ class MazeBotNavigation(Node, MazebotMap):
                         self.nav_state = NavigationStates.NAV_STATE_TURN
 
                 elif (self.nav_state == NavigationStates.NAV_STATE_TURN):
+                    print("NAV_STATE_TURN")
                     if (self.move_direction == RobotDirectionDefinition.DIRECTION_FRONT):
-                        self.nav_state = NavigationStates.NAV_STATE_MOVE
+                        self.nav_state = NavigationStates.NAV_STATE_ALIGMENT_A_TURN
                     else:
                         self.rotateRobotOrientation(direction=RobotDirectionDefinition.DIRECTION_RIGHT)
-                        pass #TODO Teensy
+                        rot_ang = 1.57
+                        if (self.move_direction == RobotDirectionDefinition.DIRECTION_RIGHT):
+                            self.move_direction = RobotDirectionDefinition.DIRECTION_FRONT
+                        elif (self.move_direction == RobotDirectionDefinition.DIRECTION_LEFT):
+                            self.move_direction = RobotDirectionDefinition.DIRECTION_FRONT
+                            rot_ang = -rot_ang
+                        else:
+                            self.move_direction = RobotDirectionDefinition.DIRECTION_RIGHT
+                        
+                        self.pub_turn.publish(Float32(data = rot_ang))
                         self.nav_state = NavigationStates.NAV_STATE_TURN
 
+                elif (self.nav_state == NavigationStates.NAV_STATE_ALIGMENT_A_TURN):
+                    print("Alligment")
+                    if self.alignRobotToCell() == True:
+                        if (self.move_direction == RobotDirectionDefinition.DIRECTION_FRONT):
+                            self.nav_state = NavigationStates.NAV_STATE_MOVE
+                        else:
+                            self.nav_state = NavigationStates.NAV_STATE_TURN
+
                 elif (self.nav_state == NavigationStates.NAV_STATE_MOVE):
+                    print("NAV_STATE_MOVE ")
                     self.moveRobotNextCell(direction = RobotDirectionDefinition.DIRECTION_FRONT)
-                    pass #TODO Teensy
+                    self.pub_move.publish(Float32(data=0.3))
                     self.nav_state = NavigationStates.NAV_STATE_ALIGMENT
 
                 elif (self.nav_state == NavigationStates.NAV_STATE_HOMECOMING):
@@ -459,8 +505,6 @@ class MazeBotNavigation(Node, MazebotMap):
                 vel.angular.y = 0.0
                 vel.angular.z = 0.0
                 self.pub_cmd_vel.publish(vel)
-        self.nav_busy = False
-
 
     def listener_callback_orientation(self, msg):
         # print("orientation")
@@ -471,7 +515,27 @@ class MazeBotNavigation(Node, MazebotMap):
         self.msg_wall_detection = msg
 
     def listener_callback_navigation_start(self, msg):
+        self.get_logger().info('Nav gestartet')
+        print("nav started")
         self.navigation_enabled = bool(msg.data)
+
+    def listener_callback_navigation_isbusy(self, msg):
+        self.teensy_busy = bool(msg.data)
+        self.nav_busy = self.teensy_busy
+
+    def subscription_letter_callback(self, msg):
+        self.get_logger().info('Letters detected: "%s"' % msg.victim_id)
+        if msg.victim_id == 'H':
+            self.publisher_dropper.publish(kits=3, location = msg.victim_location)
+        elif msg.victim_id == 'S':
+            self.publisher_dropper.publish(kits=1, location = msg.victim_location)
+            
+    def subscription_color_callback(self, msg):
+        self.get_logger().info('Color detected: "%s"' % msg.victim_id)
+        if msg.victim_id == 'ROT':
+            self.publisher_dropper.publish(kits=1, location = msg.victim_location)
+        elif msg.victim_id == 'GELB':
+            self.publisher_dropper.publish(kits=1, location = msg.victim_location)
 
     def alignRobotToCell(self):
         retval = False
@@ -481,35 +545,47 @@ class MazeBotNavigation(Node, MazebotMap):
         vel.angular.z = 0.0
 
         dis_error = (self.msg_wall_orientation.front_distance % self.map_cell_length) - (self.map_cell_length/2.0)
-        dis_error -= self.lidar_cell_offset[0]
+        dis_error += self.lidar_cell_offset[0]
         
-        # print(dis_error, self.msg_wall_orientation.front_distance,self.map_cell_length/2.0)
-        
+        print(dis_error, self.msg_wall_orientation.front_distance, self.map_cell_length/2.0, self.lidar_cell_offset[0])
+
         if (dis_error > self.distance_max_epsilon[0]):
-            vel.linear.x = self.vel_max_linear
+            self.pub_move.publish(Float32(data= dis_error))
         elif (dis_error < -self.distance_max_epsilon[0]):
-            vel.linear.x = -self.vel_max_linear
+            self.pub_move.publish(Float32(data= dis_error))
         else: 
+            
             angular_err = 0.0
-            if (self.msg_wall_orientation.left_distance < 0):
+            if (self.msg_wall_orientation.left_distance < 0.0):
                 angular_err = self.msg_wall_orientation.right_angle_deg
-            elif (self.msg_wall_orientation.right_distance < 0):
+            elif (self.msg_wall_orientation.right_distance < 0.0):
                 angular_err = self.msg_wall_orientation.left_angle_deg
             elif (self.msg_wall_orientation.left_distance < self.msg_wall_orientation.right_distance):
                 angular_err = self.msg_wall_orientation.left_angle_deg
             else:
                 angular_err = self.msg_wall_orientation.right_angle_deg
-            
-            vel.linear.x = 0.0
-            vel.angular.z = 0.2 #rad/s
-            if (angular_err > self.tangent_max_epsilon):
-                vel.angular.z = self.vel_max_angular
-            elif (angular_err < -self.tangent_max_epsilon):
-                vel.angular.z = -self.vel_max_angular
-            else:
-                vel.angular.z = 0.0
-                retval = True
-        self.pub_cmd_vel.publish(vel)
+            print(angular_err)
+
+            if (self.msg_wall_orientation.left_distance < 0.13):
+                angular_err = angular_err + 2.0*(math.pi/180)
+            elif (self.msg_wall_orientation.right_distance < 0.13):
+                angular_err = angular_err - 2.0*(math.pi/180)
+
+            if ((angular_err > self.tangent_max_epsilon) or (angular_err < -self.tangent_max_epsilon)):
+                self.nav_busy=True
+                angular_err_rad = (Float32(data=(-angular_err *math.pi /180.0)))
+                self.pub_turn.publish(angular_err_rad)
+
+        #     vel.linear.x = 0.0
+        #     if (angular_err > self.tangent_max_epsilon):
+        #         vel.angular.z = -self.vel_max_angular
+        #     elif (angular_err < -self.tangent_max_epsilon):
+        #         vel.angular.z = self.vel_max_angular
+        #     else:
+        #         vel.angular.z = 0.0
+        #         retval = True
+        # self.pub_cmd_vel.publish(vel)
+            retval=True
 
         return retval
 
@@ -523,7 +599,7 @@ class MazeBotNavigation(Node, MazebotMap):
         possible_directions = []
         #1.) Wohin kann ich ueberhaupt fahren, Wo sind keine Wände
         (front, rear, left, right) = self.getWallsOfCurrentCell()
-
+        print("Current Cell:", front, rear, left, right)
         if (front == WallDefinition.WALL_NO):
             possible_directions.append([RobotDirectionDefinition.DIRECTION_FRONT])
         if (rear == WallDefinition.WALL_NO):
@@ -533,6 +609,8 @@ class MazeBotNavigation(Node, MazebotMap):
         if (right == WallDefinition.WALL_NO):
             possible_directions.append([RobotDirectionDefinition.DIRECTION_RIGHT])
     
+        print("possible diections:", possible_directions)
+
         #2.) Welche Zellen wurden davon noch nicht besucht
         for i in range(len(possible_directions)):
             possible_directions[i].append(self.getVisitCounter(possible_directions[i][0])) 
@@ -543,17 +621,18 @@ class MazeBotNavigation(Node, MazebotMap):
                     save = possible_directions[j]
                     possible_directions[j] = possible_directions[j+1]
                     possible_directions[j+1] = save
+        print("possible diections:", possible_directions)
 
         #3.) Welche Zelle hat von den verbleibenden am meisten Wände
         for i in range(len(possible_directions)):
             if (possible_directions[i][0] == RobotDirectionDefinition.DIRECTION_FRONT):
-                possible_directions[i].append(self.msg_wall_detection.front[1:])
+                possible_directions[i].append(sum(self.msg_wall_detection.front[1:]))
             elif (possible_directions[i][0] == RobotDirectionDefinition.DIRECTION_REAR):
-                possible_directions[i].append(self.msg_wall_detection.rear[1:])
+                possible_directions[i].append(sum(self.msg_wall_detection.rear[1:]))
             elif (possible_directions[i][0] == RobotDirectionDefinition.DIRECTION_LEFT):
-                possible_directions[i].append(self.msg_wall_detection.left[1:])
+                possible_directions[i].append(sum(self.msg_wall_detection.left[1:]))
             else:
-                possible_directions[i].append(self.msg_wall_detection.right[1:])
+                possible_directions[i].append(sum(self.msg_wall_detection.right[1:]))
         
 
         # Nach der Anzahl von Wänden sortieren, am meisten Wände zu Beginn des Arrays
@@ -567,7 +646,7 @@ class MazeBotNavigation(Node, MazebotMap):
                             possible_directions[j] = possible_directions[j+1]
                             possible_directions[j+1] = save
                 d_start = d+1
-
+        print("possible diections:", possible_directions)
         #4.) Bei gleich vielen Wänden nach links fahren
         if (len(possible_directions) == 1): #Zelle mit drei Wände verlassen
             direction = possible_directions[0][0]
@@ -579,19 +658,19 @@ class MazeBotNavigation(Node, MazebotMap):
                     direction = RobotDirectionDefinition.DIRECTION_LEFT#nach links fahren
                     break
             
-            if (direction != RobotDirectionDefinition.DIRECTION_INVALID):
+            if (direction == RobotDirectionDefinition.DIRECTION_INVALID):
                 for i in range(len(possible_directions)):
                     if (possible_directions[i][0]==RobotDirectionDefinition.DIRECTION_FRONT):
                         direction =  RobotDirectionDefinition.DIRECTION_FRONT #nach vorne fahren
 
-            if (direction != RobotDirectionDefinition.DIRECTION_INVALID):
+            if (direction == RobotDirectionDefinition.DIRECTION_INVALID):
                 for i in range(len(possible_directions)):
                     if (possible_directions[i][0]==RobotDirectionDefinition.DIRECTION_RIGHT):
                         direction = RobotDirectionDefinition.DIRECTION_RIGHT #nach rechts fahren
                         break
 
 
-        elif possible_directions[0][1] == 3: #In die Zelle mit drei Waenden fahren
+        elif possible_directions[0][2] == 3: #In die Zelle mit drei Waenden fahren
             direction = possible_directions[0][0]
         else:
             #Bevorzuge Links, Rechts, Geradeaus
@@ -599,32 +678,17 @@ class MazeBotNavigation(Node, MazebotMap):
                 if (possible_directions[i][0]==RobotDirectionDefinition.DIRECTION_LEFT):
                     direction = RobotDirectionDefinition.DIRECTION_LEFT#nach links fahren
                     break
-            if (direction != RobotDirectionDefinition.DIRECTION_INVALID):
+            if (direction == RobotDirectionDefinition.DIRECTION_INVALID):
                 for i in range(len(possible_directions)):
                     if (possible_directions[i][0]==RobotDirectionDefinition.DIRECTION_RIGHT):
                         direction = RobotDirectionDefinition.DIRECTION_RIGHT #nach rechts fahren
                         break
-            if (direction != RobotDirectionDefinition.DIRECTION_INVALID):
+            if (direction == RobotDirectionDefinition.DIRECTION_INVALID):
                 for i in range(len(possible_directions)):
                     if (possible_directions[i][0]==RobotDirectionDefinition.DIRECTION_FRONT):
                         direction =  RobotDirectionDefinition.DIRECTION_FRONT #nach vorne fahren
 
         return direction
-            
-    def moveRobotToFrontCell(self):
-        pass
-
-    def moveRobotToRearCell(self):
-        pass
-
-    def moveRobotToLeftCell():
-        pass
-
-    def moveRobotToLeftCell():
-        pass
-    
-
-
 
 def main(args=None):
     rclpy.init()

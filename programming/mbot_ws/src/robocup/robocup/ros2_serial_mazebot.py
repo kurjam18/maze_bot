@@ -4,13 +4,14 @@ from rclpy.node import Node
 from std_msgs.msg import String
 from std_msgs.msg import Int32
 from std_msgs.msg import Float32
+from std_msgs.msg import Bool
 import serial
 
 
 
 
 class SerialMazebot:
-        def __init__(self, baudrate = 9600, port = '/dev/ttyACM1', tout = 1):
+        def __init__(self, baudrate = 9600, port = '/dev/ttyACM0', tout = 1):
             self.baudrate = baudrate
             self.port = port
             self.serial = serial.Serial(self.port, baudrate, timeout=tout)
@@ -64,7 +65,10 @@ class SerialMazebot:
             self.serial.write(xmtMessage.encode('utf-8'))
 
         def isBusy(self)-> bool:
-            rcvMessage = self.serial.readline()
+            xmtMessage = "busy:\n"
+            self.serial.write(xmtMessage.encode('utf-8'))
+            rcvMessage = self.serial.readline().decode('utf-8').strip()
+            print(rcvMessage)
             if rcvMessage == "true":
                 return True
             else:
@@ -86,12 +90,28 @@ class Ros2SerialMazeBot(Node):
             self.listener_callback_turn,
             10)
         
+        self.subscription_move = self.create_subscription(
+            Float32,
+            '/move',
+            self.listener_callback_move,
+            10)
+        
         self.subscription_dropper = self.create_subscription(
             Int32,
             '/dropper',
             self.listener_callback_dropper,
             10)
         self.serial = SerialMazebot()
+        timer_period = 1.0  # seconds
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.pub_isbusy = self.create_publisher(Bool, 'is_busy', 10)
+
+    def timer_callback(self):
+        if self.serial.isBusy():
+            self. pub_isbusy.publish(Bool(data=True))
+            print("isbusy")
+        else:
+            self. pub_isbusy.publish(Bool(data=False))
 
     def listener_callback_cmd_vel(self, msg):
         self.serial.send_Linear(msg.linear.x)
@@ -102,6 +122,9 @@ class Ros2SerialMazeBot(Node):
         self.serial.turn(msg.data)
         self.get_logger().info('turn')
 
+    def listener_callback_move(self, msg):
+        self.serial.move(msg.data)
+        self.get_logger().info('move')
 
     def listener_callback_dropper(self, msg):
         self.serial.dropKits(msg.data)

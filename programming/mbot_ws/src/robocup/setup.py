@@ -29,6 +29,8 @@ setup(
             'openmv = robocup.openmv_uart:main ',
             'navigation = robocup.navigation:main',
             'detection = robocup.detection:main',
+            'cell = robocup.mazebot_cell:main',
+            'sensor = robocup.robu_sensor:main',
         ],
     },
 )
